@@ -1,9 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+import AppBar from 'material-ui/AppBar';
+
 
 var NavBar = React.createClass({
     render: function () {
-        return <h1>Hello world</h1>;
+
+        return(<AppBar title="SJSU MSA" className="navbar"> </AppBar>);
     }
 });
 
