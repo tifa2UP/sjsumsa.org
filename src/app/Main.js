@@ -46,7 +46,6 @@ class Main extends Component {
         onTouchTap={this.handleRequestClose}
       />
     );
-
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div>
