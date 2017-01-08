@@ -7,8 +7,25 @@ html {
 
 body {
     margin: 0;
+    color: white;
 }
 .navbar-menu-items{
     color: white;
     background-color: transparent;
+}
+.headingStyle1{
+    margin-top: 0;
+}
+.section{
+    text-align: center;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.section-text{
+    text-align: left;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 20px;
+    line-height: 120%;
 }
