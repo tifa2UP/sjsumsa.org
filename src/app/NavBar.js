@@ -11,7 +11,7 @@ var NavBar = React.createClass({
         };
 
         const menuItems = {
-            margin: '0px',
+            marginTop: 4,
         };
 
         const items = (
@@ -23,7 +23,7 @@ var NavBar = React.createClass({
                 <FlatButton label="Contact" style={menuItem}/>
             </div>
         );
-        return(<AppBar title="SJSU MSA" className="navbar" iconElementRight={items}/>);
+        return(<AppBar title="SJSU MSA" className="navbar" iconElementRight={items} showMenuIconButton={false}/>);
     }
 });
 
