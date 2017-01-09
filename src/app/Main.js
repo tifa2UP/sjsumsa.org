@@ -23,31 +23,12 @@ const muiTheme = getMuiTheme({
 });
 
 class Main extends Component {
-    constructor(props, context) {
-        super(props, context);
-
-        this.state = {
-            open: false,
-        };
-    }
-
-    handleRequestClose = () => {
-        this.setState({
-            open: false,
-        });
-    };
-
-    handleTouchTap = () => {
-        this.setState({
-            open: true,
-        });
-    };
 
     render() {
         return (
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div>
-                    <Navbar/>
+                    <Navbar />
                     <Home />
                     <Events />
                     <About />

@@ -12,7 +12,7 @@ var Resources = React.createClass({
         }
 
         return (
-            <div className="section with-shadow" style={bgColor}>
+            <div className="section" style={bgColor}>
                 <h1 className="headingStyle1">RESOURCES</h1>
                 <p className="section-text">The MSA of San Jose State University is dedicated to building an awesome environment of brotherhood and
                     sisterhood on campus through social, religious, interfaith educational and outreach events.
