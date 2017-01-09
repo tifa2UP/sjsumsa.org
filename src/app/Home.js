@@ -10,7 +10,7 @@ var Home = React.createClass({
 
         }
         return (
-            <Paper className="section" style={bgColor} rounded={false}>
+            <Paper className="section" style={bgColor} rounded={false} >
                 <h1 className="headingStyle1">HOME</h1>
                 <p className="section-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero

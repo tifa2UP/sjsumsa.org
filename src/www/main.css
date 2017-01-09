@@ -15,6 +15,7 @@ body {
 }
 .headingStyle1{
     margin-top: 0;
+    margin-bottom: 30px;
 }
 .section{
     text-align: center;
@@ -26,4 +27,24 @@ body {
     padding-right: 4%;
     font-size: 20px;
     line-height: 120%;
+}
+.event-header-upcoming{
+    color: red;
+}
+
+.cardTest{
+    color: black !important;
+    width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-bottom: 1.5%;
+    display: inline-block;
+}
+.cardTest svg{
+    color: black!important;
+}
+@media screen and (max-width: 876px) {
+    .cardTest{
+        width: 100%;
+    }
 }
