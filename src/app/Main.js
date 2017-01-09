@@ -5,19 +5,22 @@
 import React, {Component} from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 import Dialog from 'material-ui/Dialog';
-import {indigo500, indigo700, redA200, cyan500, white, cyan300} from 'material-ui/styles/colors';
+import {indigo500, indigo700, redA200, cyan800, white, cyan300} from 'material-ui/styles/colors';
 import FlatButton from 'material-ui/FlatButton';
+import zIndex from 'material-ui/styles/zIndex'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 var Navbar = require('./NavBar');
+var Home = require('./Home');
 var About = require('./About');
 
 const muiTheme = getMuiTheme({
     palette: {
-        accent1Color: cyan500,
+        accent1Color: cyan800,
         accent2Color: cyan300,
         textColor: white,
     },
+
 });
 
 class Main extends Component {
@@ -46,6 +49,7 @@ class Main extends Component {
             <MuiThemeProvider muiTheme={muiTheme}>
                 <div>
                     <Navbar/>
+                    <Home />
                     <About />
                 </div>
             </MuiThemeProvider>

@@ -5,10 +5,11 @@ import {cyan300} from 'material-ui/styles/colors';
 var About = React.createClass({
     render: function () {
         const bgColor = {
-            backgroundColor: cyan300
+            backgroundColor: cyan300,
         }
+
         return (
-            <div className="section" style={bgColor} >
+            <div className="section with-shadow" style={bgColor}>
                 <h1 className="headingStyle1">ABOUT</h1>
                 <p className="section-text">The MSA of San Jose State University is dedicated to building an awesome environment of brotherhood and
                     sisterhood on campus through social, religious, interfaith educational and outreach events.
