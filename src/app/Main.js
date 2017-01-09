@@ -3,16 +3,15 @@
  * which incorporates components provided by Material-UI.
  */
 import React, {Component} from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
-import Dialog from 'material-ui/Dialog';
 import {indigo500, indigo700, redA200, cyan800, white, cyan300} from 'material-ui/styles/colors';
-import FlatButton from 'material-ui/FlatButton';
-import zIndex from 'material-ui/styles/zIndex'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 var Navbar = require('./NavBar');
 var Home = require('./Home');
+var Events = require('./Events');
 var About = require('./About');
+var Resources = require('./Resources');
+var Contact = require('./Contact');
 
 const muiTheme = getMuiTheme({
     palette: {
@@ -50,7 +49,10 @@ class Main extends Component {
                 <div>
                     <Navbar/>
                     <Home />
+                    <Events />
                     <About />
+                    <Resources />
+                    <Contact />
                 </div>
             </MuiThemeProvider>
         );

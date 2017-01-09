@@ -1,7 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 import {cyan400} from 'material-ui/styles/colors';
-import zIndex from 'material-ui/styles/zIndex'
 
 var Home = React.createClass({
     render: function () {
