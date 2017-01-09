@@ -3,6 +3,7 @@
  */
 var React = require('react');
 var ReactDOM = require('react-dom');
+import Paper from 'material-ui/Paper'
 import {blueGrey50} from 'material-ui/styles/colors';
 
 var Events = React.createClass({
@@ -12,10 +13,10 @@ var Events = React.createClass({
         }
 
         return (
-            <div className="section" style={bgColor}>
+            <Paper className="section" style={bgColor} rounded={false}>
                 <h1 className="headingStyle1">EVENTS</h1>
 
-            </div>
+            </Paper>
         );
     }
 })

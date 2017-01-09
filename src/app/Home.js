@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+import Paper from 'material-ui/Paper'
 import {cyan400} from 'material-ui/styles/colors';
 
 var Home = React.createClass({
@@ -9,7 +10,7 @@ var Home = React.createClass({
 
         }
         return (
-            <div className="section" style={bgColor} >
+            <Paper className="section" style={bgColor} rounded={false}>
                 <h1 className="headingStyle1">HOME</h1>
                 <p className="section-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero
@@ -19,7 +20,7 @@ var Home = React.createClass({
                     Donec mattis dolor eu dapibus fermentum.
                 </p>
 
-            </div>
+            </Paper>
         );
     }
 })
