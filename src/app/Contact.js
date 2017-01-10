@@ -6,7 +6,7 @@ import MenuItem from 'material-ui/MenuItem';
 import {cyan300} from 'material-ui/styles/colors';
 
 const bgColor = {
-    backgroundColor: '#D1D6E7',
+    backgroundColor: '#e70e19',
 };
 
 export default class Contact extends React.Component {
@@ -20,7 +20,7 @@ export default class Contact extends React.Component {
     render () {
 
         return (
-            <Paper className="section" style={this.bgColor} rounded={false}>
+            <Paper className="section" style={} rounded={false}>
                 <h1 className="headingStyle1">CONTACT</h1>
                 <div id="contact-form">
                     <form>

@@ -12,7 +12,7 @@ var Home = require('./Home');
 var Events = require('./Events');
 var About = require('./About');
 var Resources = require('./Resources');
-var Contact = require('./Contact');
+import Contact from './Contact'
 
 const muiTheme = getMuiTheme({
     palette: {
