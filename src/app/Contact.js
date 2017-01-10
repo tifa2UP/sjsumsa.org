@@ -1,22 +1,62 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
 import Paper from 'material-ui/Paper'
+import TextField from 'material-ui/TextField';
+import SelectField from 'material-ui/SelectField';
+import MenuItem from 'material-ui/MenuItem';
 import {cyan300} from 'material-ui/styles/colors';
 
-var Contact = React.createClass({
-    render: function () {
-        const bgColor = {
-            backgroundColor: cyan300,
-        }
+const bgColor = {
+    backgroundColor: '#D1D6E7',
+};
+
+export default class Contact extends React.Component {
+
+    state = {
+        value: 1,
+    };
+
+    handleChange = (event, index, value) => this.setState({value});
+
+    render () {
 
         return (
-            <Paper className="section" style={bgColor} rounded={false}>
+            <Paper className="section" style={this.bgColor} rounded={false}>
                 <h1 className="headingStyle1">CONTACT</h1>
-                <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida. Sed purus risus, tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet laoreet. Aliquam erat volutpat. Phasellus vitae sem at eros tincidunt maximus id nec ipsum. Mauris consequat nulla neque, sed condimentum ipsum varius in. Donec mattis dolor eu dapibus fermentum.
-                </p>
+                <div id="contact-form">
+                    <form>
+                        <TextField
+                            hintText="Name"
+                            floatingLabelText="Name"
+                        /><br />
+                        <SelectField
+                            floatingLabelText="Frequency"
+                            value={this.state.value}
+                            onChange={this.handleChange}
+                        >
+                            <MenuItem value={1} primaryText="Never" />
+                            <MenuItem value={2} primaryText="Every Night" />
+                            <MenuItem value={3} primaryText="Weeknights" />
+                            <MenuItem value={4} primaryText="Weekends" />
+                            <MenuItem value={5} primaryText="Weekly" />
+                        </SelectField>
+                        <br />
+                        <TextField
+                            hintText="Hint Text"
+                            floatingLabelText="Floating Label Text"
+                        /><br />
+                        <TextField
+                            hintText="Hint Text"
+                            floatingLabelText="Floating Label Text"
+                        /><br />
+                        <TextField
+                            hintText="Hint Text"
+                            floatingLabelText="Floating Label Text"
+                        /><br />
+
+                    </form>
+                </div>
             </Paper>
         );
     }
-})
+}
 
-module.exports = Contact;

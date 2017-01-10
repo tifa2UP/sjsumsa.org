@@ -16,7 +16,6 @@ var NavBar = React.createClass({
 
         const items = (
             <div style={menuItems}>
-                <FlatButton label="Home" style={menuItem}/>
                 <FlatButton label="Events" style={menuItem}/>
                 <FlatButton label="About" style={menuItem}/>
                 <FlatButton label="Resources" style={menuItem}/>
