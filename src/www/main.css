@@ -52,6 +52,20 @@ body {
 
 #contact-form{
     width: 30%;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: inline-block;
+}
+#social{
+    display: inline;
+}
+.fa{
+    font-size: 200%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.alignTop{
+    vertical-align: top !important;
+}
+.alignLeft{
 }

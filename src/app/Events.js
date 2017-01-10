@@ -46,72 +46,74 @@ var Events = React.createClass({
             <Paper className="section" style={bgColor} rounded={false}>
                 <h1 className="headingStyle1">EVENTS</h1>
                 {/*Original Card*/}
-                <div className="cardTest">
-                    <Card style={cardStyle}>
-                        <CardHeader
-                            title="EVENT 1" titleStyle={titleStyle}
-                            subtitle="Social" subtitleStyle={subtitleStyle}
-                            actAsExpander={true}
-                            showExpandableButton={true}
-                        />
-                        <img src="img/event-placeholder.jpeg" style={imgStyle}/>
-                        <CardText style={cardTextStyle} expandable={true}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                            Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                            Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                        </CardText>
-                        <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
-                        <CardActions>
-                            <FlatButton label="Description" primary={true}/>
-                            <FlatButton label="RSVP" secondary={true}/>
-                        </CardActions>
-                    </Card>
-                </div>
-                {/*Duplicate cards start here*/}
-                <div className="cardTest">
-                    <Card style={cardStyle}>
-                        <CardHeader
-                            title="EVENT 2" titleStyle={titleStyle}
-                            subtitle="Social" subtitleStyle={subtitleStyle}
-                            actAsExpander={true}
-                            showExpandableButton={true}
-                        />
-                        <img src="img/event-placeholder.jpeg" style={imgStyle}/>
-                        <CardText style={cardTextStyle} expandable={true}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                            Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                            Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                        </CardText>
-                        <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
-                        <CardActions>
-                            <FlatButton label="Description" primary={true}/>
-                            <FlatButton label="RSVP" secondary={true}/>
-                        </CardActions>
-                    </Card>
-                </div>
-                <div className="cardTest">
-                    <Card style={cardStyle}>
-                        <CardHeader
-                            title="EVENT 3" titleStyle={titleStyle}
-                            subtitle="Social" subtitleStyle={subtitleStyle}
-                            actAsExpander={true}
-                            showExpandableButton={true}
-                        />
-                        <img src="img/event-placeholder.jpeg" style={imgStyle}/>
-                        <CardText style={cardTextStyle} expandable={true}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                            Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                            Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                        </CardText>
-                        <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
-                        <CardActions>
-                            <FlatButton label="Description" primary={true}/>
-                            <FlatButton label="RSVP" secondary={true}/>
-                        </CardActions>
-                    </Card>
+                <div>
+                    <div className="cardTest alignTop">
+                        <Card style={cardStyle}>
+                            <CardHeader
+                                title="EVENT 1" titleStyle={titleStyle}
+                                subtitle="Social" subtitleStyle={subtitleStyle}
+                                actAsExpander={true}
+                                showExpandableButton={true}
+                            />
+                            <img src="img/event-placeholder.jpeg" style={imgStyle}/>
+                            <CardText style={cardTextStyle} expandable={true}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+                                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+                                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+                            </CardText>
+                            <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
+                            <CardActions>
+                                <FlatButton label="Description" primary={true}/>
+                                <FlatButton label="RSVP" secondary={true}/>
+                            </CardActions>
+                        </Card>
+                    </div>
+                    {/*Duplicate cards start here*/}
+                    <div className="cardTest alignTop">
+                        <Card style={cardStyle}>
+                            <CardHeader
+                                title="EVENT 2" titleStyle={titleStyle}
+                                subtitle="Social" subtitleStyle={subtitleStyle}
+                                actAsExpander={true}
+                                showExpandableButton={true}
+                            />
+                            <img src="img/event-placeholder.jpeg" style={imgStyle}/>
+                            <CardText style={cardTextStyle} expandable={true}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+                                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+                                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+                            </CardText>
+                            <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
+                            <CardActions>
+                                <FlatButton label="Description" primary={true}/>
+                                <FlatButton label="RSVP" secondary={true}/>
+                            </CardActions>
+                        </Card>
+                    </div>
+                    <div className="cardTest alignTop">
+                        <Card style={cardStyle}>
+                            <CardHeader
+                                title="EVENT 3" titleStyle={titleStyle}
+                                subtitle="Social" subtitleStyle={subtitleStyle}
+                                actAsExpander={true}
+                                showExpandableButton={true}
+                            />
+                            <img src="img/event-placeholder.jpeg" style={imgStyle}/>
+                            <CardText style={cardTextStyle} expandable={true}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
+                                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
+                                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
+                            </CardText>
+                            <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
+                            <CardActions>
+                                <FlatButton label="Description" primary={true}/>
+                                <FlatButton label="RSVP" secondary={true}/>
+                            </CardActions>
+                        </Card>
+                    </div>
                 </div>
                 <h4> Events Archive </h4>
             </Paper>

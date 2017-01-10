@@ -18,7 +18,7 @@ const fullWidth = {
 };
 
 const buttonStyle = {
-    marginTop: '20'
+    marginTop: '20px'
 }
 
 export default class Contact extends React.Component {
@@ -34,41 +34,44 @@ export default class Contact extends React.Component {
         return (
             <Paper className="section" style={bgColor} rounded={false}>
                 <h1 className="headingStyle1">CONTACT</h1>
-                <div id="contact-form">
-                    <form>
-                        <TextField fullWidth={true}
-                                   floatingLabelText="Name"
-                        /><br />
-                        <SelectField style={leftAlign} fullWidth={true}
-                                     floatingLabelText="Category"
-                                     value={this.state.value}
-                                     onChange={this.handleChange}
-                        >
-                            <MenuItem value={1} primaryText="Suggestion" />
-                            <MenuItem value={2} primaryText="Event invitation" />
-                            <MenuItem value={3} primaryText="Question" />
-                            <MenuItem value={4} primaryText="Donation" />
-                            <MenuItem value={5} primaryText="Website bug/typo" />
-                            <MenuItem value={6} primaryText="Other" />
-                        </SelectField>
-                        <br />
+                <div>
+                    <div id="contact-form" className="alignTop">
+                        <form>
+                            <TextField fullWidth={true}
+                                       floatingLabelText="Name"
+                            /><br />
+                            <SelectField style={leftAlign} fullWidth={true}
+                                         floatingLabelText="Category"
+                                         value={this.state.value}
+                                         onChange={this.handleChange}
+                            >
+                                <MenuItem value={1} primaryText="Suggestion" />
+                                <MenuItem value={2} primaryText="Event invitation" />
+                                <MenuItem value={3} primaryText="Question" />
+                                <MenuItem value={4} primaryText="Donation" />
+                                <MenuItem value={5} primaryText="Website bug/typo" />
+                                <MenuItem value={6} primaryText="Other" />
+                            </SelectField>
+                            <br />
 
-                        <TextField fullWidth={true}
-                                   hintText="E-mail"
-                                   floatingLabelText="E-mail"
-                        /><br />
-                        <TextField style={leftAlign} fullWidth={true}
-                                   multiLine={true}
-                                   rows={4}
-                                   rowsMax={4}
-                                   floatingLabelText="Message"
-                        /><br />
-                    </form>
-                    <FlatButton primary={true} label="Submit" style={buttonStyle} />
-                </div>
+                            <TextField fullWidth={true}
+                                       floatingLabelText="E-mail"
+                            /><br />
+                            <TextField style={leftAlign} fullWidth={true}
+                                       multiLine={true}
+                                       rows={4}
+                                       rowsMax={4}
+                                       floatingLabelText="Message"
+                            /><br />
+                        </form>
+                        <FlatButton primary={true} label="Submit" style={buttonStyle} />
+                    </div>
 
-                <div id="social">
-
+                    <div id="social" className="alignTop alignLeft">
+                        <h4>Join us on social media</h4>
+                        <i className="fa fa-facebook"></i>
+                        <i className="fa fa-instagram"></i>
+                    </div>
                 </div>
             </Paper>
         );
