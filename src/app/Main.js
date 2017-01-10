@@ -5,6 +5,7 @@
 import React, {Component} from 'react';
 import {indigo500, indigo700, redA200, cyan800, white, cyan300} from 'material-ui/styles/colors';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 var Navbar = require('./NavBar');
 var Home = require('./Home');
@@ -26,7 +27,7 @@ class Main extends Component {
 
     render() {
         return (
-            <MuiThemeProvider muiTheme={muiTheme}>
+            <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
                 <div>
                     <Navbar />
                     <Home />
