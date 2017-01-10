@@ -67,5 +67,13 @@ body {
 .alignTop{
     vertical-align: top !important;
 }
-.alignLeft{
+
+.width60{
+    width: 45%;
+    display: inline-block;
+    padding-right: 10%;
+}
+.width40{
+    width: 35%;
+    display: inline-block;
 }

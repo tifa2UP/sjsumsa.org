@@ -19,7 +19,7 @@ const fullWidth = {
 
 const buttonStyle = {
     marginTop: '20px'
-}
+};
 
 export default class Contact extends React.Component {
 
@@ -68,7 +68,7 @@ export default class Contact extends React.Component {
                     </div>
 
                     <div id="social" className="alignTop alignLeft">
-                        <h4>Join us on social media</h4>
+                        <h4>Find us on social media</h4>
                         <i className="fa fa-facebook"></i>
                         <i className="fa fa-instagram"></i>
                     </div>
