@@ -1,18 +1,30 @@
 var React = require('react');
-import Paper from 'material-ui/Paper'
-import TextField from 'material-ui/TextField';
-import SelectField from 'material-ui/SelectField';
-import MenuItem from 'material-ui/MenuItem';
-import {cyan300} from 'material-ui/styles/colors';
+import Paper from "material-ui/Paper";
+import TextField from "material-ui/TextField";
+import SelectField from "material-ui/SelectField";
+import MenuItem from "material-ui/MenuItem";
+import FlatButton from "material-ui/FlatButton";
 
 const bgColor = {
-    backgroundColor: '#e70e19',
+    backgroundColor: '#D1D6E7',
 };
+
+const leftAlign = {
+    textAlign: 'left',
+};
+
+const fullWidth = {
+    width: '100%'
+};
+
+const buttonStyle = {
+    marginTop: '20'
+}
 
 export default class Contact extends React.Component {
 
     state = {
-        value: 1,
+        value: null,
     };
 
     handleChange = (event, index, value) => this.setState({value});
@@ -20,40 +32,43 @@ export default class Contact extends React.Component {
     render () {
 
         return (
-            <Paper className="section" style={} rounded={false}>
+            <Paper className="section" style={bgColor} rounded={false}>
                 <h1 className="headingStyle1">CONTACT</h1>
                 <div id="contact-form">
                     <form>
-                        <TextField
-                            hintText="Name"
-                            floatingLabelText="Name"
+                        <TextField fullWidth={true}
+                                   floatingLabelText="Name"
                         /><br />
-                        <SelectField
-                            floatingLabelText="Frequency"
-                            value={this.state.value}
-                            onChange={this.handleChange}
+                        <SelectField style={leftAlign} fullWidth={true}
+                                     floatingLabelText="Category"
+                                     value={this.state.value}
+                                     onChange={this.handleChange}
                         >
-                            <MenuItem value={1} primaryText="Never" />
-                            <MenuItem value={2} primaryText="Every Night" />
-                            <MenuItem value={3} primaryText="Weeknights" />
-                            <MenuItem value={4} primaryText="Weekends" />
-                            <MenuItem value={5} primaryText="Weekly" />
+                            <MenuItem value={1} primaryText="Suggestion" />
+                            <MenuItem value={2} primaryText="Event invitation" />
+                            <MenuItem value={3} primaryText="Question" />
+                            <MenuItem value={4} primaryText="Donation" />
+                            <MenuItem value={5} primaryText="Website bug/typo" />
+                            <MenuItem value={6} primaryText="Other" />
                         </SelectField>
                         <br />
-                        <TextField
-                            hintText="Hint Text"
-                            floatingLabelText="Floating Label Text"
-                        /><br />
-                        <TextField
-                            hintText="Hint Text"
-                            floatingLabelText="Floating Label Text"
-                        /><br />
-                        <TextField
-                            hintText="Hint Text"
-                            floatingLabelText="Floating Label Text"
-                        /><br />
 
+                        <TextField fullWidth={true}
+                                   hintText="E-mail"
+                                   floatingLabelText="E-mail"
+                        /><br />
+                        <TextField style={leftAlign} fullWidth={true}
+                                   multiLine={true}
+                                   rows={4}
+                                   rowsMax={4}
+                                   floatingLabelText="Message"
+                        /><br />
                     </form>
+                    <FlatButton primary={true} label="Submit" style={buttonStyle} />
+                </div>
+
+                <div id="social">
+
                 </div>
             </Paper>
         );

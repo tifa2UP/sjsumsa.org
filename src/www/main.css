@@ -45,4 +45,13 @@ body {
     .cardTest{
         width: 100%;
     }
+    #contact-form{
+        width: 100%;
+    }
+}
+
+#contact-form{
+    width: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
