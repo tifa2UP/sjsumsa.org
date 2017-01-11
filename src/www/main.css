@@ -3,6 +3,7 @@
 }
 html {
   font-family: 'Roboto', sans-serif;
+    /*background-color: cyan;*/
 }
 
 body {
@@ -76,4 +77,8 @@ body {
 .width40{
     width: 35%;
     display: inline-block;
+}
+#landing-img{
+    width: 100%;
+    display: block;
 }
