@@ -49,6 +49,9 @@ body {
     #contact-form{
         width: 100%;
     }
+    #landing-img{
+        width: 0px !important;
+    }
 }
 
 #contact-form{
@@ -82,3 +85,4 @@ body {
     width: 100%;
     display: block;
 }
+

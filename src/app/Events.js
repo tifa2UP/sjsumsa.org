@@ -12,6 +12,7 @@ var Events = React.createClass({
 
         const bgColor = {
             backgroundColor: '#00b8d6',
+            borderTop: '#000',
         };
 
         const titleStyle = {
@@ -43,9 +44,9 @@ var Events = React.createClass({
         const cardTextExpanded = false;
 
         return (
-            <Paper className="section" style={bgColor} rounded={false}>
+            <Paper className="section" style={bgColor} rounded={false} zDepth={1}>
                 <h1 className="headingStyle1">EVENTS</h1>
-                {/*Original Card*/}
+                 {/*Original Card*/}
                 <div>
                     <div className="cardTest alignTop">
                         <Card style={cardStyle}>
@@ -119,6 +120,6 @@ var Events = React.createClass({
             </Paper>
         );
     }
-})
+});
 
 module.exports = Events;
