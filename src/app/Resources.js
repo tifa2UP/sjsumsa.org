@@ -20,6 +20,7 @@ var Resources = React.createClass({
                         <h2>Praying Space</h2>
                         <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
                             Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
+                            laoreet.tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
                             laoreet.
                         </p>
                     </div>
