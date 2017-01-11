@@ -16,7 +16,7 @@ var Resources = React.createClass({
             <Paper className="section" style={bgColor} rounded={false}>
                 <h1 className="headingStyle1">RESOURCES</h1>
                 <div id="praying-spacing">
-                    <div className="width60 alignTop">
+                    <div className="col-md-5 col-md-offset-1 alignTop">
                         <h2>Praying Space</h2>
                         <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
                             Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
@@ -24,7 +24,7 @@ var Resources = React.createClass({
                             laoreet.
                         </p>
                     </div>
-                    <div className="width40">
+                    <div className="col-md-5">
                         <iframe src="https://player.vimeo.com/video/190913296?byline=0&portrait=0" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                 </div>
