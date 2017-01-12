@@ -28,7 +28,7 @@ var Resources = React.createClass({
                         </div>
                     </div>
                 </Paper>
-                <Paper className="section no-padding" style={bgColor} rounded={false}>
+                <Paper className="section no-padding" style={bgColor} rounded={false} zDepth={5}>
                     <div id="study-groups">
                         <div className="width40 ">
                             <img src="img/praying-space.jpg" className="block-img full-width" />
