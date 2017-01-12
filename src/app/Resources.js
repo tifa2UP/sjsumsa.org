@@ -13,24 +13,36 @@ var Resources = React.createClass({
         }
 
         return (
-            <Paper className="section no-padding" style={bgColor} rounded={false}>
-                <div id="praying-spacing">
-                    <div className="width60 alignTop">
-                        <h2>Praying Space</h2>
-                        <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
-                            Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
-                            laoreet.
-                        </p>
+            <div>
+                <Paper className="section no-padding" style={bgColor} rounded={false}>
+                    <div id="praying-spacing">
+                        <div className="width60 alignTop">
+                            <h2>Praying Space</h2>
+                            <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
+                                Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
+                                laoreet.
+                            </p>
+                        </div>
+                        <div className="width40 ">
+                            <img src="img/praying-space.jpg" className="block-img full-width" />
+                        </div>
                     </div>
-                    <div className="width40 ">
-                        <img src="img/praying-space.jpg" className="block-img full-width" />
+                </Paper>
+                <Paper className="section no-padding" style={bgColor} rounded={false}>
+                    <div id="study-groups">
+                        <div className="width40 ">
+                            <img src="img/praying-space.jpg" className="block-img full-width" />
+                        </div>
+                        <div className="width60 alignTop">
+                            <h2>Study Groups</h2>
+                            <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
+                                Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
+                                laoreet.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                {/*<div id="study-groups">*/}
-                {/*</div>*/}
-                {/*<div id="brochure">*/}
-                {/*</div>*/}
-            </Paper>
+                </Paper>
+            </div>
         );
     }
 })

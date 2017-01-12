@@ -116,6 +116,7 @@ var Events = React.createClass({
                         </Card>
                     </div>
                 </div>
+                {/*TODO: make this a button*/}
                 <h4> Events Archive </h4>
             </Paper>
         );
