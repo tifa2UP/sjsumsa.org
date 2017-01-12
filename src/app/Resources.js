@@ -13,21 +13,23 @@ var Resources = React.createClass({
         }
 
         return (
-            <Paper className="section" style={bgColor} rounded={false}>
-                {/*<h1 className="headingStyle1">RESOURCES</h1>*/}
-                <div className="container" id="praying-spacing">
-                    <div className="col-md-5 col-md-offset-1 alignTop">
+            <Paper className="section no-padding" style={bgColor} rounded={false}>
+                <div id="praying-spacing">
+                    <div className="width60 alignTop">
                         <h2>Praying Space</h2>
                         <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
                             Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
-                            laoreet.tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
                             laoreet.
                         </p>
                     </div>
-                    <div className="col-md-5">
-                        <img src="img/praying-space.jpg" className="full-width"/>
+                    <div className="width40 ">
+                        <img src="img/praying-space.jpg" className="block-img full-width" />
                     </div>
                 </div>
+                {/*<div id="study-groups">*/}
+                {/*</div>*/}
+                {/*<div id="brochure">*/}
+                {/*</div>*/}
             </Paper>
         );
     }

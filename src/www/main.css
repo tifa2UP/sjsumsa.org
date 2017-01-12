@@ -73,13 +73,15 @@ body {
 }
 
 .width60{
-    width: 45%;
+    width: 60%;
     display: inline-block;
     padding-right: 10%;
+    padding-left: 10%;
 }
 .width40{
-    width: 35%;
+    width: 40%;
     display: inline-block;
+    vertical-align: bottom;
 }
 #landing-img{
     width: 100%;
@@ -89,4 +91,15 @@ body {
 .full-width{
     width: 100%;
 }
-
+.no-padding{
+    padding: 0px !important;
+}
+.no-margin{
+    margin: 0px !important;
+}
+.block-img{
+    display: block;
+}
+.align-left{
+    text-align: left;
+}
