@@ -50,7 +50,7 @@ body {
         width: 100%;
     }
     #landing-img{
-        width: 0px !important;
+        width: 0 !important;
     }
 }
 
@@ -84,5 +84,9 @@ body {
 #landing-img{
     width: 100%;
     display: block;
+}
+
+.full-width{
+    width: 100%;
 }
 
