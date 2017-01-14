@@ -1,12 +1,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 import Paper from 'material-ui/Paper';
-import {cyan300} from 'material-ui/styles/colors';
+import {cyan500} from 'material-ui/styles/colors';
 
 var About = React.createClass({
     render: function () {
         const bgColor = {
-            backgroundColor: cyan300,
+            backgroundColor: cyan500,
         }
 
         return (
@@ -17,6 +17,6 @@ var About = React.createClass({
             </Paper>
         );
     }
-})
+});
 
 module.exports = About;

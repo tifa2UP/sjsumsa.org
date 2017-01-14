@@ -50,7 +50,7 @@ var Resources = React.createClass({
                     <h2 className="no-margin">New Students Handbook</h2>
                     <p id="handbook-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
                         Sed purus risus,tempus a condimentum quis,</p>
-                    <RaisedButton secondary={true} label="Download PDF" style={buttonStyle}/>
+                    <RaisedButton secondary={true} target="_blank" href="handbook.pdf" label="Download PDF" style={buttonStyle}/>
                 </div>
             </div>
         );

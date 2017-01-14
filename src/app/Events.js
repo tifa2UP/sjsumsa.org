@@ -6,10 +6,15 @@ var ReactDOM = require('react-dom');
 import Paper from 'material-ui/Paper'
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import RaisedButton from 'material-ui/RaisedButton';
+
 
 var Events = React.createClass({
     render: function () {
 
+        const archiveStyle = {
+            marginTop: 20,
+        }
         const bgColor = {
             backgroundColor: '#00b8d6',
             borderTop: '#000',
@@ -41,6 +46,9 @@ var Events = React.createClass({
             color: '#000',
         };
 
+        const whiteColor = {
+            color: 'white'
+        }
         const cardTextExpanded = false;
 
         return (
@@ -115,9 +123,9 @@ var Events = React.createClass({
                             </CardActions>
                         </Card>
                     </div>
+
                 </div>
-                {/*TODO: make this a button*/}
-                <h4> Events Archive </h4>
+                <FlatButton label="Events Archive" style={archiveStyle}/>
             </Paper>
         );
     }
