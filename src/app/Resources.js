@@ -4,13 +4,17 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 import Paper from 'material-ui/Paper'
+import RaisedButton from 'material-ui/RaisedButton'
 import {cyan300} from 'material-ui/styles/colors';
 
 var Resources = React.createClass({
     render: function () {
         const bgColor = {
             backgroundColor: cyan300,
-        }
+        };
+        const buttonStyle = {
+            padding: '0px',
+        };
 
         return (
             <div>
@@ -42,6 +46,12 @@ var Resources = React.createClass({
                         </div>
                     </div>
                 </Paper>
+                <div id="handbook">
+                    <h2 className="no-margin">New Students Handbook</h2>
+                    <p id="handbook-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
+                        Sed purus risus,tempus a condimentum quis,</p>
+                    <RaisedButton secondary={true} label="Download PDF" style={buttonStyle}/>
+                </div>
             </div>
         );
     }

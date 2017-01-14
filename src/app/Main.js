@@ -20,7 +20,6 @@ const muiTheme = getMuiTheme({
         accent2Color: cyan300,
         textColor: white,
     },
-
 });
 
 class Main extends Component {

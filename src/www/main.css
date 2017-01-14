@@ -52,6 +52,10 @@ body {
     #landing-img{
         width: 0 !important;
     }
+    #handbook-description{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 #contact-form{
@@ -102,4 +106,22 @@ body {
 }
 .align-left{
     text-align: left;
+}
+#handbook{
+    background-size: 100%;
+    background: url("img/handbook.jpeg") no-repeat;
+    text-align: center;
+    padding: 40px;
+}
+
+#handbook > * {
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+
+#handbook-description{
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 130%;
 }
