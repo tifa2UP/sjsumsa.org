@@ -53,13 +53,25 @@ body {
         width: 0 !important;
     }
     #handbook-description{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
     }
 
     #about{
         padding-left: 2%;
         padding-right: 2%;
+    }
+    .width60{
+        width: 100% !important;
+    }
+    .width40{
+        width: 00% !important;
+    }
+    #contact-form{
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+        display: inline-block;
     }
 }
 
@@ -157,6 +169,7 @@ body {
    padding-right: 10%;
 }
 
-.h2-resources{
-
+.resource-description {
+    font-size: 130%;
+    line-height: 140%;
 }
