@@ -13,13 +13,14 @@ var Events = require('./Events');
 var About = require('./About');
 var Resources = require('./Resources');
 import Contact from './Contact'
+import Footer from './Footer'
 
 const muiTheme = getMuiTheme({
     palette: {
         textColor: white,
     },
     textField: {
-        focusColor: white,
+        focusColor: 'white',
     },
 });
 
@@ -35,6 +36,7 @@ class Main extends Component {
                     <About />
                     <Resources />
                     <Contact />
+                    <Footer />
                 </div>
             </MuiThemeProvider>
         );
