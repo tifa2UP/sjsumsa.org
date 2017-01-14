@@ -22,6 +22,9 @@ const buttonStyle = {
     marginTop: '20px',
     color: 'white'
 };
+const blackColor = {
+    color: 'black'
+};
 
 export default class Contact extends React.Component {
 
@@ -47,13 +50,15 @@ export default class Contact extends React.Component {
                                          floatingLabelText="Category"
                                          value={this.state.value}
                                          onChange={this.handleChange}
+                                         menuItemStyle={blackColor}
                             >
                                 <MenuItem value={1} primaryText="Suggestion" />
                                 <MenuItem value={2} primaryText="Event invitation" />
                                 <MenuItem value={3} primaryText="Question" />
-                                <MenuItem value={4} primaryText="Donation" />
-                                <MenuItem value={5} primaryText="Website bug/typo" />
-                                <MenuItem value={6} primaryText="Other" />
+                                <MenuItem value={4} primaryText="Housing" />
+                                <MenuItem value={5} primaryText="Donation" />
+                                <MenuItem value={6} primaryText="Website bug/typo" />
+                                <MenuItem value={7} primaryText="Other" />
                             </SelectField>
                             <br />
 

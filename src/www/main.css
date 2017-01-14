@@ -129,8 +129,8 @@ body {
 }
 #handbook{
     background-size: 100%;
-    background: url("img/handbook.jpeg") no-repeat;
-    background-position: center;
+    background: url("img/handbook.jpeg");
+    background-position: right;
     text-align: center;
     padding: 40px;
 }
@@ -139,7 +139,6 @@ body {
     margin: 0px;
     padding-bottom: 30px;
 }
-
 
 #handbook-description{
     padding-left: 25%;
