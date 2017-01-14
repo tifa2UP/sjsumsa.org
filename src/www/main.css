@@ -56,6 +56,11 @@ body {
         padding-left: 5%;
         padding-right: 5%;
     }
+
+    #about{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
 }
 
 #contact-form{
@@ -145,4 +150,13 @@ body {
 }
 .fa-facebook:hover {
     color: #3b5998;
+}
+
+#about{
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+.h2-resources{
+
 }

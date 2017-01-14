@@ -10,7 +10,7 @@ var About = React.createClass({
         }
 
         return (
-            <Paper className="section" style={bgColor} rounded={false}>
+            <Paper className="section" style={bgColor} rounded={false} id="about">
                 <h1 className="headingStyle1">ABOUT</h1>
                 <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida. Sed purus risus, tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet laoreet. Aliquam erat volutpat. Phasellus vitae sem at eros tincidunt maximus id nec ipsum. Mauris consequat nulla neque, sed condimentum ipsum varius in. Donec mattis dolor eu dapibus fermentum.
                 </p>
