@@ -21,6 +21,7 @@ const muiTheme = getMuiTheme({
     },
     textField: {
         focusColor: 'white',
+        floatingLabelColor: '#e6e6e6e'
     },
 });
 
