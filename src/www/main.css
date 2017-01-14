@@ -68,10 +68,13 @@ body {
         width: 00% !important;
     }
     #contact-form{
-        width: 100%;
+        width: 80%!important;
         margin-right: 0%;
         margin-left: 0%;
         display: inline-block;
+    }
+    .section-text{
+        text-align: center;
     }
 }
 
@@ -127,6 +130,7 @@ body {
 #handbook{
     background-size: 100%;
     background: url("img/handbook.jpeg") no-repeat;
+    background-position: center;
     text-align: center;
     padding: 40px;
 }
