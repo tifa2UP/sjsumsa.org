@@ -6,7 +6,6 @@ var ReactDOM = require('react-dom');
 import Paper from 'material-ui/Paper'
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-import RaisedButton from 'material-ui/RaisedButton';
 
 
 var Events = React.createClass({
@@ -14,7 +13,7 @@ var Events = React.createClass({
 
         const archiveStyle = {
             marginTop: 20,
-        }
+        };
         const bgColor = {
             backgroundColor: '#00b8d6',
             borderTop: '#000',
