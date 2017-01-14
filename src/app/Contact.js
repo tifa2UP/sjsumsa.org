@@ -4,9 +4,10 @@ import TextField from "material-ui/TextField";
 import SelectField from "material-ui/SelectField";
 import MenuItem from "material-ui/MenuItem";
 import FlatButton from "material-ui/FlatButton";
+import {cyan100} from 'material-ui/styles/colors';
 
 const bgColor = {
-    backgroundColor: '#D1D6E7',
+    backgroundColor: cyan100,
 };
 
 const leftAlign = {
@@ -18,7 +19,8 @@ const fullWidth = {
 };
 
 const buttonStyle = {
-    marginTop: '20px'
+    marginTop: '20px',
+    color: 'white'
 };
 
 export default class Contact extends React.Component {
@@ -37,8 +39,9 @@ export default class Contact extends React.Component {
                 <div>
                     <div id="contact-form" className="alignTop">
                         <form>
-                            <TextField fullWidth={true}
-                                       floatingLabelText="Name"
+                            <TextField
+                                fullWidth={true}
+                                floatingLabelText="Name"
                             /><br />
                             <SelectField style={leftAlign} fullWidth={true}
                                          floatingLabelText="Category"
@@ -57,20 +60,20 @@ export default class Contact extends React.Component {
                             <TextField fullWidth={true}
                                        floatingLabelText="E-mail"
                             /><br />
-                            <TextField style={leftAlign} fullWidth={true}
+                            <TextField style={leftAlign}  fullWidth={true}
                                        multiLine={true}
                                        rows={4}
                                        rowsMax={4}
                                        floatingLabelText="Message"
                             /><br />
                         </form>
-                        <FlatButton primary={true} label="Submit" style={buttonStyle} />
+                        <FlatButton label="Submit" style={buttonStyle} />
                     </div>
 
                     <div id="social" className="alignTop alignLeft">
                         <h4>Find us on social media</h4>
-                        <i className="fa fa-facebook"></i>
-                        <i className="fa fa-instagram"></i>
+                        <i className="fa fa-facebook hvr-grow"></i>
+                        <i className="fa fa-instagram hvr-grow"></i>
                     </div>
                 </div>
             </Paper>

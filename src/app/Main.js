@@ -16,8 +16,6 @@ import Contact from './Contact'
 
 const muiTheme = getMuiTheme({
     palette: {
-        accent1Color: cyan800,
-        accent2Color: cyan300,
         textColor: white,
     },
 });
@@ -26,7 +24,7 @@ class Main extends Component {
 
     render() {
         return (
-            <MuiThemeProvider muiTheme={getMuiTheme(lightBaseTheme)}>
+            <MuiThemeProvider muiTheme={getMuiTheme(muiTheme)}>
                 <div>
                     <Navbar />
                     <Home />
