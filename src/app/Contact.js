@@ -4,10 +4,10 @@ import TextField from "material-ui/TextField";
 import SelectField from "material-ui/SelectField";
 import MenuItem from "material-ui/MenuItem";
 import FlatButton from "material-ui/FlatButton";
-import {cyan100} from 'material-ui/styles/colors';
+import {cyan300} from 'material-ui/styles/colors';
 
 const bgColor = {
-    backgroundColor: cyan100,
+    backgroundColor: cyan300,
 };
 
 const leftAlign = {

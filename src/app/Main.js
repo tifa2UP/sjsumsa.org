@@ -18,6 +18,9 @@ const muiTheme = getMuiTheme({
     palette: {
         textColor: white,
     },
+    textField: {
+        focusColor: white,
+    },
 });
 
 class Main extends Component {
