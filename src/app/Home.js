@@ -11,7 +11,7 @@ var Home = React.createClass({
         }
         return (
             <div>
-                <img id="landing-img" src="img/landing-background.png" />
+                <img id="landing-img" src="img/mb-bg-fb-08.png" />
             </div>
         );
     }
