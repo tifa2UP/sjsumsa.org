@@ -17,7 +17,7 @@ export default class Footer extends React.Component {
     render () {
 
         return (
-            <Paper style={style} zDepth={5}>Website made with <i className="fa fa-heart"></i> by SJSU students</Paper>
+            <Paper style={style} zDepth={5}>Website made with <i className="fa fa-heart"/> by SJSU students</Paper>
         );
     }
 }
