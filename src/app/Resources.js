@@ -35,12 +35,12 @@ var Resources = React.createClass({
                     </div>
                 </Paper>
                 <Paper className="section no-padding" style={bgColor} rounded={false} zDepth={5}>
-                    <div id="study-groups">
+                    <div id="quran-halaqa">
                         <div className="width40 ">
                             <img src="img/praying-space.jpg" className="block-img full-width" />
                         </div>
                         <div className="width60 alignTop section">
-                            <h2 className="">Study Groups</h2>
+                            <h2 className="">Quran Halaqa</h2>
                             <p className="section-text resource-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
                                 Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
                                 laoreet.

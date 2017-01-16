@@ -166,7 +166,16 @@ body {
 .fa-facebook:hover {
     color: #3b5998;
 }
-
+.fa-heart{
+    font-size: 70%;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1px;
+    vertical-align: middle;
+}
+.fa-heart:hover{
+    color: #ff4081;
+}
 #about{
    padding-left: 10%;
    padding-right: 10%;
