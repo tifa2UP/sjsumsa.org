@@ -8,13 +8,13 @@ var Home = React.createClass({
         const bgColor = {
             backgroundColor: cyan400,
 
-        }
+        };
         return (
             <div>
                 <img id="landing-img" src="img/mb-bg-fb-08.png" />
             </div>
         );
     }
-})
+});
 
 module.exports = Home;
