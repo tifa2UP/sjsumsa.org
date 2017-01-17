@@ -1,25 +1,17 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 import AppBar from "material-ui/AppBar";
-import FlatButton from "material-ui/FlatButton";
+// import FlatButton from "material-ui/FlatButton";
 
 var NavBar = React.createClass({
     render: function () {
-        const menuItem = {
-            backgroundColor: 'transparent',
-            color: 'white'
-        };
-
-        const menuItems = {
-            marginTop: 4,
-        };
 
         const items = (
-            <div style={menuItems}>
-                <FlatButton label="Events" style={menuItem}/>
-                <FlatButton label="About" style={menuItem}/>
-                <FlatButton label="Resources" style={menuItem}/>
-                <FlatButton label="Contact" style={menuItem}/>
+            <div className="navbar-items">
+                <li className="navbar-menu-items">Events</li>
+                <li className="navbar-menu-items">About</li>
+                <li className="navbar-menu-items">Resources</li>
+                <li className="navbar-menu-items">Contact</li>
             </div>
         );
         return(<AppBar title="SJSU MSA" className="navbar" iconElementRight={items} showMenuIconButton={false}/>);

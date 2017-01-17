@@ -17,12 +17,12 @@ import Footer from './Footer'
 
 const muiTheme = getMuiTheme({
     palette: {
-        textColor: white,
+        // textColor: white,
     },
     textField: {
-        focusColor: 'white',
-        floatingLabelColor: '#e6e6e6e'
-    },
+        // focusColor: 'white',
+        // floatingLabelColor: '#e6e6e6e'
+    },  
 });
 
 class Main extends Component {

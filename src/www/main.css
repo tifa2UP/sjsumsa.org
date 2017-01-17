@@ -1,6 +1,4 @@
-.navbar{
-  margin: 0;
-}
+
 html {
   font-family: 'Roboto', sans-serif;
     /*background-color: cyan;*/
@@ -13,6 +11,13 @@ body {
 .navbar-menu-items{
     color: white;
     background-color: transparent;
+    display: inline;
+    padding: 4%;
+    padding-top: 15px !important;
+    text-transform: uppercase;
+}
+.navbar-items {
+    padding-top: 15px;
 }
 .headingStyle1{
     margin-top: 0;
