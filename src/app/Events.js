@@ -15,18 +15,18 @@ var Events = React.createClass({
             marginTop: 20,
         };
         const bgColor = {
-            backgroundColor: '#00b8d6',
-            borderTop: '#000',
+            // backgroundColor: '#00b8d6',
+            // borderTop: '#000',
         };
 
         const titleStyle = {
             fontSize: '160%',
-            color: '#000'
+            // color: '#000'
         };
 
         const titleStyle2 = {
             fontSize: '120%',
-            color: '#000'
+            // color: '#000'
         };
 
         const subtitleStyle = {
@@ -42,11 +42,11 @@ var Events = React.createClass({
         };
 
         const cardTextStyle = {
-            color: '#000',
+            // color: '#000',
         };
 
         const whiteColor = {
-            color: 'white'
+            // color: 'white'
         }
         const cardTextExpanded = false;
 

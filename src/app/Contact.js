@@ -12,10 +12,15 @@ const bgColor = {
 
 const leftAlign = {
     textAlign: 'left',
+    color: 'white'
 };
 
 const fullWidth = {
     width: '100%'
+};
+
+const whiteColor = {
+    color: 'white'
 };
 
 const buttonStyle = {
@@ -38,13 +43,14 @@ export default class Contact extends React.Component {
 
         return (
             <Paper className="section" style={bgColor} rounded={false} id="contact">
-                <h1 className="headingStyle1">CONTACT</h1>
+                <h1 className="headingStyle1 white">CONTACT</h1>
                 <div>
                     <div id="contact-form" className="alignTop">
                         <form>
                             <TextField
                                 fullWidth={true}
                                 floatingLabelText="Name"
+                                style={whiteColor}
                             /><br />
                             <SelectField style={leftAlign} fullWidth={true}
                                          floatingLabelText="Category"
@@ -64,6 +70,7 @@ export default class Contact extends React.Component {
 
                             <TextField fullWidth={true}
                                        floatingLabelText="E-mail"
+                                        style={whiteColor}
                             /><br />
                             <TextField style={leftAlign}  fullWidth={true}
                                        multiLine={true}
@@ -76,9 +83,9 @@ export default class Contact extends React.Component {
                     </div>
 
                     <div id="social" className="alignTop alignLeft">
-                        <h4>Find us on social media</h4>
-                        <i className="fa fa-facebook hvr-grow"></i>
-                        <i className="fa fa-instagram hvr-grow"></i>
+                        <h4 className="white">Find us on social media</h4>
+                        <i className="fa fa-facebook white hvr-grow "></i>
+                        <i className="fa fa-instagram white hvr-grow"></i>
                     </div>
                 </div>
             </Paper>

@@ -11,7 +11,7 @@ import {cyan300} from 'material-ui/styles/colors';
 var Resources = React.createClass({
     render: function () {
         const bgColor = {
-            backgroundColor: cyan300,
+            // backgroundColor: cyan300,
         };
         const buttonStyle = {
             padding: '0px',

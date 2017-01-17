@@ -33,7 +33,7 @@ body {
 .section{
     text-align: center;
     padding: 40px 20px;
-    color: white !important;
+    /*color: white !important;*/
 }
 .section-text{
     text-align: left;
@@ -196,4 +196,7 @@ body {
 .resource-description {
     font-size: 130%;
     line-height: 140%;
+}
+.white{
+    color: white;
 }
