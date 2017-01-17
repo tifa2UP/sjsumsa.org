@@ -6,19 +6,45 @@ var ReactDOM = require('react-dom');
 import Paper from 'material-ui/Paper'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
+import Dialog from 'material-ui/Dialog'
 import {cyan300} from 'material-ui/styles/colors';
 
-var Resources = React.createClass({
-    render: function () {
-        const bgColor = {
-            backgroundImage: 'url("img/circles-25.jpg")',
-        };
-        const buttonStyle = {
-            padding: '0px',
-        };
-        const paperStyle = {
-            backgroundColor: 'transparent'
-        }
+
+const bgColor = {
+    backgroundImage: 'url("img/circles-25.jpg")',
+};
+const buttonStyle = {
+    padding: '0px',
+};
+const paperStyle = {
+    backgroundColor: 'transparent'
+};
+
+
+export default class Resources extends React.Component {
+
+
+    state = {
+        open: false,
+    };
+
+    handleOpen = () => {
+        this.setState({open: true});
+    };
+
+    handleClose = () => {
+        this.setState({open: false});
+    };
+
+    render() {
+
+        const actions = [
+            <FlatButton
+                label="Close"
+                primary={true}
+                onTouchTap={this.handleClose}
+            />
+        ];
 
         return (
             <div style={bgColor}>
@@ -30,7 +56,16 @@ var Resources = React.createClass({
                                 Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
                                 laoreet.
                             </p>
-                            <FlatButton label="Location by video"/>
+                            <FlatButton label="Location by video" onTouchTap={this.handleOpen}/>
+                            <Dialog
+                                title="Prayer Space Location"
+                                actions={actions}
+                                modal={false}
+                                open={this.state.open}
+                                onRequestClose={this.handleClose}
+                            >
+                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/JRn8Xc41nUI" frameBorder="0" allowFullScreen></iframe>
+                            </Dialog>
                         </div>
                         <div className="width40 ">
                             <img src="img/praying-space.jpg" className="block-img full-width" />
@@ -61,6 +96,4 @@ var Resources = React.createClass({
             </div>
         );
     }
-})
-
-module.exports = Resources;
+}

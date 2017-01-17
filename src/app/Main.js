@@ -11,7 +11,7 @@ var Navbar = require('./NavBar');
 var Home = require('./Home');
 var Events = require('./Events');
 var About = require('./About');
-var Resources = require('./Resources');
+import Resources from './Resources'
 import Contact from './Contact'
 import Footer from './Footer'
 
