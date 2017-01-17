@@ -31,8 +31,8 @@ class Main extends Component {
         return (
             <MuiThemeProvider muiTheme={getMuiTheme(muiTheme)}>
                 <div>
-                    <Navbar />
                     <Home />
+                    <Navbar />
                     <Events />
                     <About />
                     <Resources />

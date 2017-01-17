@@ -11,15 +11,18 @@ import {cyan300} from 'material-ui/styles/colors';
 var Resources = React.createClass({
     render: function () {
         const bgColor = {
-            // backgroundColor: cyan300,
+            backgroundImage: 'url("img/circles-25.jpg")',
         };
         const buttonStyle = {
             padding: '0px',
         };
+        const paperStyle = {
+            backgroundColor: 'transparent'
+        }
 
         return (
-            <div>
-                <Paper className="section no-padding" style={bgColor} rounded={false} id="resources">
+            <div style={bgColor}>
+                <Paper className="section no-padding" rounded={false} id="resources" style={paperStyle} zDepth={1}>
                     <div id="praying-spacing">
                         <div className="width60 alignTop section">
                             <h2>Praying Space</h2>
@@ -34,7 +37,7 @@ var Resources = React.createClass({
                         </div>
                     </div>
                 </Paper>
-                <Paper className="section no-padding" style={bgColor} rounded={false} zDepth={5}>
+                <Paper className="section no-padding" rounded={false} style={paperStyle} zDepth={5}>
                     <div id="quran-halaqa">
                         <div className="width40 ">
                             <img src="img/praying-space.jpg" className="block-img full-width" />

@@ -6,7 +6,7 @@ import {cyan500} from 'material-ui/styles/colors';
 var About = React.createClass({
     render: function () {
         const bgColor = {
-            // backgroundColor: cyan500,
+            backgroundColor: '#f9f9f9',
         }
 
         return (
