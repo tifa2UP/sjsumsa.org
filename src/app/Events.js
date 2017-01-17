@@ -51,7 +51,7 @@ var Events = React.createClass({
         const cardTextExpanded = false;
 
         return (
-            <Paper className="section" style={bgColor} rounded={false} zDepth={1}>
+            <Paper className="section" style={bgColor} rounded={false} zDepth={1} id="events">
                 <h1 className="headingStyle1">EVENTS</h1>
                  {/*Original Card*/}
                 <div>

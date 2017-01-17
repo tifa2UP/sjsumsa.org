@@ -37,7 +37,7 @@ export default class Contact extends React.Component {
     render () {
 
         return (
-            <Paper className="section" style={bgColor} rounded={false}>
+            <Paper className="section" style={bgColor} rounded={false} id="contact">
                 <h1 className="headingStyle1">CONTACT</h1>
                 <div>
                     <div id="contact-form" className="alignTop">

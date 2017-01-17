@@ -19,7 +19,7 @@ var Resources = React.createClass({
 
         return (
             <div>
-                <Paper className="section no-padding" style={bgColor} rounded={false}>
+                <Paper className="section no-padding" style={bgColor} rounded={false} id="resources">
                     <div id="praying-spacing">
                         <div className="width60 alignTop section">
                             <h2>Praying Space</h2>
