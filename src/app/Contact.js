@@ -84,9 +84,10 @@ export default class Contact extends React.Component {
 
                     <div id="social" className="alignTop alignLeft">
                         <h4 className="white">Find us on social media</h4>
-                        <i className="fa fa-facebook white hvr-grow "></i>
-                        <i className="fa fa-instagram white hvr-grow"></i>
+                        <a href="https://www.facebook.com/groups/5696549276/" target="_blank"><i className="fa fa-facebook white hvr-grow"></i></a>
+                        <a href="https://www.instagram.com/msa_sjsu/" target="_blank"><i className="fa fa-instagram white hvr-grow"></i> </a>
                     </div>
+
                 </div>
             </Paper>
         );
