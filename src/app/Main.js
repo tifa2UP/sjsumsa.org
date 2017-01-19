@@ -10,10 +10,23 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 var Navbar = require('./NavBar');
 var Home = require('./Home');
 var Events = require('./Events');
-var About = require('./About');
+import About from './About';
 import Resources from './Resources'
 import Contact from './Contact'
 import Footer from './Footer'
+import * as firebase from 'firebase';
+
+
+var config = {
+    apiKey: "AIzaSyCL4-zkL3zYHt9NhYDx9m2Q3Ig9US8dTHA",
+    authDomain: "sjsu-msa.firebaseapp.com",
+    databaseURL: "https://sjsu-msa.firebaseio.com",
+    storageBucket: "sjsu-msa.appspot.com",
+    messagingSenderId: "799679794278"
+};
+
+firebase.initializeApp(config);
+const db = firebase.database();
 
 const muiTheme = getMuiTheme({
     palette: {

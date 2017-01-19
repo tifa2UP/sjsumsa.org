@@ -1,22 +1,39 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React, {Component} from 'react';
 import Paper from 'material-ui/Paper';
 import {cyan500} from 'material-ui/styles/colors';
+var firebase = require('firebase');
 
-var About = React.createClass({
-    render: function () {
+export default class About extends React.Component {
+
+    constructor(){
+        super();
+        this.state = {
+            about: 'Description loading'
+        };
+    }
+
+    componentDidMount(){
+        const aboutRef = firebase.database().ref('About');
+        aboutRef.on('value', snap => {
+            this.setState({
+                about: snap.val()
+            });
+            console.log(this.state.about);
+        })
+    }
+
+    render() {
         const bgColor = {
             backgroundColor: '#f9f9f9',
-        }
+        };
 
         return (
             <Paper className="section" style={bgColor} rounded={false} id="about">
                 <h1 className="headingStyle1">ABOUT</h1>
-                <p className="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida. Sed purus risus, tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet laoreet. Aliquam erat volutpat. Phasellus vitae sem at eros tincidunt maximus id nec ipsum. Mauris consequat nulla neque, sed condimentum ipsum varius in. Donec mattis dolor eu dapibus fermentum.
+                <p className="section-text">{this.state.about}
                 </p>
             </Paper>
         );
     }
-});
+}
 
-module.exports = About;
