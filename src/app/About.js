@@ -18,7 +18,6 @@ export default class About extends React.Component {
             this.setState({
                 about: snap.val()
             });
-            console.log(this.state.about);
         })
     }
 

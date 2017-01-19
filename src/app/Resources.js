@@ -3,6 +3,7 @@
  */
 var React = require('react');
 var ReactDOM = require('react-dom');
+var firebase = require('firebase');
 import Paper from 'material-ui/Paper'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
@@ -23,9 +24,25 @@ const paperStyle = {
 
 export default class Resources extends React.Component {
 
+    componentDidMount(){
+        const prayingSpaceRef = firebase.database().ref('Praying Space');
+        prayingSpaceRef.on('value', snap => {
+            this.setState({
+                prayingSpace: snap.val()
+            });
+        })
+        const halaqaRef = firebase.database().ref('Halaqa');
+        halaqaRef.on('value', snap => {
+            this.setState({
+                halaqa: snap.val()
+            });
+        })
+    }
 
     state = {
         open: false,
+        prayingSpace: 'fetching',
+        halaqa: 'fetching'
     };
 
     handleOpen = () => {
@@ -52,9 +69,7 @@ export default class Resources extends React.Component {
                     <div id="praying-spacing">
                         <div className="width60 alignTop section">
                             <h2>Praying Space</h2>
-                            <p className="section-text resource-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
-                                Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
-                                laoreet.
+                            <p className="section-text resource-description">{this.state.prayingSpace}
                             </p>
                             <FlatButton label="Location by video" onTouchTap={this.handleOpen}/>
                             <Dialog
@@ -79,9 +94,7 @@ export default class Resources extends React.Component {
                         </div>
                         <div className="width60 alignTop section">
                             <h2 className="">Quran Halaqa</h2>
-                            <p className="section-text resource-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
-                                Sed purus risus,tempus a condimentum quis, tempor eget leo. Sed consectetur accumsan nulla sit amet
-                                laoreet.
+                            <p className="section-text resource-description">{this.state.halaqa}
                             </p>
                             <FlatButton label="Sign up"/>
                         </div>
