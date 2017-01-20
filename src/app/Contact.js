@@ -7,12 +7,12 @@ import FlatButton from "material-ui/FlatButton";
 import {cyan300} from 'material-ui/styles/colors';
 
 const bgColor = {
-    backgroundColor: cyan300,
+    backgroundImage:  'url("img/circles-25.jpg")',
 };
 
 const leftAlign = {
     textAlign: 'left',
-    color: 'white'
+    // color: 'white'
 };
 
 const fullWidth = {
@@ -20,12 +20,12 @@ const fullWidth = {
 };
 
 const whiteColor = {
-    color: 'white'
+    // color: 'white'
 };
 
 const buttonStyle = {
     marginTop: '20px',
-    color: 'white'
+    // color: 'white'
 };
 const blackColor = {
     color: 'black'
@@ -44,7 +44,7 @@ export default class Contact extends React.Component {
 
         return (
             <Paper className="section" style={bgColor} rounded={false} id="contact">
-                <h1 className="headingStyle1 white">CONTACT</h1>
+                <h1 className="headingStyle1 ">CONTACT</h1>
                 <div>
                     <div id="contact-form" className="alignTop">
                         <form>
@@ -87,9 +87,9 @@ export default class Contact extends React.Component {
                     </div>
 
                     <div id="social" className="alignTop alignLeft">
-                        <h4 className="white">Find us on social media</h4>
-                        <a href="https://www.facebook.com/groups/5696549276/" target="_blank"><i className="fa fa-facebook white hvr-grow"></i></a>
-                        <a href="https://www.instagram.com/msa_sjsu/" target="_blank"><i className="fa fa-instagram white hvr-grow"></i> </a>
+                        <h4 className="">Find us on social media</h4>
+                        <a href="https://www.facebook.com/groups/5696549276/" target="_blank"><i className="fa fa-facebook hvr-grow"></i></a>
+                        <a href="https://www.instagram.com/msa_sjsu/" target="_blank"><i className="fa fa-instagram hvr-grow"></i> </a>
                     </div>
 
                 </div>

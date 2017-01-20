@@ -19,6 +19,9 @@ body {
     color: inherit;
     text-decoration: none;
 }
+a {
+    color: inherit;
+}
 
 .navbar-menu-items a:hover{
     color: rgba(131, 25, 61, 0.77);

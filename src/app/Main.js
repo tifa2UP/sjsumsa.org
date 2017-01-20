@@ -33,8 +33,8 @@ const muiTheme = getMuiTheme({
         // textColor: white,
     },
     textField: {
-        focusColor: 'white',
-        floatingLabelColor: '#e6e6e6e',
+        // focusColor: 'white',
+        // floatingLabelColor: '#e6e6e6e',
     },
 });
 
