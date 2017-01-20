@@ -12,7 +12,7 @@ export default class About extends React.Component {
         };
     }
 
-    componentDidMount(){
+    componentWillMount(){
         const aboutRef = firebase.database().ref('About');
         aboutRef.on('value', snap => {
             this.setState({

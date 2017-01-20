@@ -24,7 +24,7 @@ const paperStyle = {
 
 export default class Resources extends React.Component {
 
-    componentDidMount(){
+    componentWillMount(){
         const prayingSpaceRef = firebase.database().ref('Praying Space');
         prayingSpaceRef.on('value', snap => {
             this.setState({

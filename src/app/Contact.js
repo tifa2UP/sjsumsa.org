@@ -34,10 +34,11 @@ const blackColor = {
 export default class Contact extends React.Component {
 
     state = {
-        value: null,
+        name: '',
+        category: null,
     };
 
-    handleChange = (event, index, value) => this.setState({value});
+    // handleChange = (event, index, value) => this.setState({category});
 
     render () {
 
@@ -48,13 +49,14 @@ export default class Contact extends React.Component {
                     <div id="contact-form" className="alignTop">
                         <form>
                             <TextField
+                                type="text"
                                 fullWidth={true}
                                 floatingLabelText="Name"
                                 style={whiteColor}
                             /><br />
                             <SelectField style={leftAlign} fullWidth={true}
                                          floatingLabelText="Category"
-                                         value={this.state.value}
+                                         value={this.state.category}
                                          onChange={this.handleChange}
                                          menuItemStyle={blackColor}
                             >
@@ -69,6 +71,7 @@ export default class Contact extends React.Component {
                             <br />
 
                             <TextField fullWidth={true}
+                                       type="email"
                                        floatingLabelText="E-mail"
                                         style={whiteColor}
                             /><br />
@@ -76,6 +79,7 @@ export default class Contact extends React.Component {
                                        multiLine={true}
                                        rows={4}
                                        rowsMax={4}
+                                       required="true"
                                        floatingLabelText="Message"
                             /><br />
                         </form>
