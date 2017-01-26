@@ -9,7 +9,7 @@ import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 var Navbar = require('./NavBar');
 var Home = require('./Home');
-var Events = require('./Events');
+import Events from './Events';
 import About from './About';
 import Resources from './Resources'
 import Contact from './Contact'

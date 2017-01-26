@@ -69,7 +69,16 @@ export default class Resources extends React.Component {
                     <div id="praying-spacing">
                         <div className="width60 alignTop section">
                             <h2>Praying Space</h2>
-                            <p className="section-text resource-description">{this.state.prayingSpace}
+                            <p className="section-text resource-description">The on-campus praying space is located in the Mosaic
+                                Cross Cultural Center. Located on the east side of the Student Union. The space is also equipped with a
+                                wudoo’ (ablution) area.</p>
+                            <p className="section-text resource-description">
+                                The praying space is open on: <br/>
+                                <ul>
+                                    <li>M-Th: 9 am to 8 pm</li>
+
+                                    <li> Fr: 9 am - 5 pm </li>
+                                </ul>
                             </p>
                             <FlatButton label="Location by video" onTouchTap={this.handleOpen}/>
                             <Dialog
@@ -94,7 +103,12 @@ export default class Resources extends React.Component {
                         </div>
                         <div className="width60 alignTop section">
                             <h2 className="">Quran Halaqa</h2>
-                            <p className="section-text resource-description">{this.state.halaqa}
+                            <p className="section-text resource-description">
+                                We have a weekly Qur'an halaqa (session) in which we review or memorize a part of Qur'an. <br/>
+                            </p>
+                            <p>
+                                location: TBD for Spring <br/>
+                                Time: TBD for Spring
                             </p>
                             <FlatButton label="Sign up"/>
                         </div>

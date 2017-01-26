@@ -43,7 +43,7 @@ a {
     padding-left: 4%;
     padding-right: 4%;
     font-size: 20px;
-    line-height: 120%;
+    line-height: 140%;
 }
 
 .cardTest{
@@ -208,4 +208,7 @@ a {
 }
 .fa-envelope{
     /*font-size: 10%;*/
+}
+.br{
+    margin: 10px 0;
 }

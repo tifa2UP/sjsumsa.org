@@ -8,25 +8,32 @@ import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'mat
 import FlatButton from 'material-ui/FlatButton';
 
 
-var Events = React.createClass({
-    render: function () {
+export default class Events extends React.Component{
+
+    eventsList(props){
+        var numbers = props.numbers;
+        const eventItems = numbers.map((number) =>
+            <li>{number}</li>
+        );
+        return(
+            <div>{eventItems}</div>
+        )
+    };
+
+    render() {
+        const numbers = [1, 2, 3, 4];
 
         const archiveStyle = {
             marginTop: 20,
         };
-        const bgColor = {
-            // backgroundColor: '#00b8d6',
-            // borderTop: '#000',
-        };
+
 
         const titleStyle = {
             fontSize: '160%',
-            // color: '#000'
         };
 
         const titleStyle2 = {
             fontSize: '120%',
-            // color: '#000'
         };
 
         const subtitleStyle = {
@@ -45,15 +52,14 @@ var Events = React.createClass({
             // color: '#000',
         };
 
-        const whiteColor = {
-            // color: 'white'
-        }
         const cardTextExpanded = false;
 
         return (
-            <Paper className="section" style={bgColor} rounded={false} zDepth={1} id="events">
+
+            <Paper className="section" rounded={false} zDepth={1} id="events">
+                <eventsList numbers={numbers} />
                 <h1 className="headingStyle1">EVENTS</h1>
-                 {/*Original Card*/}
+                {/*Original Card*/}
                 <div>
                     <div className="cardTest alignTop">
                         <Card style={cardStyle}>
@@ -128,6 +134,5 @@ var Events = React.createClass({
             </Paper>
         );
     }
-});
+};
 
-module.exports = Events;
