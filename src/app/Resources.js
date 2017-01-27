@@ -91,15 +91,16 @@ export default class Resources extends React.Component {
                                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/JRn8Xc41nUI" frameBorder="0" allowFullScreen></iframe>
                             </Dialog>
                         </div>
+
                         <div className="width40 ">
-                            <img src="img/praying-space.jpg" className="block-img full-width" />
+                            <img src="img/praying_space.jpg" className="block-img full-width" />
                         </div>
                     </div>
                 </Paper>
                 <Paper className="section no-padding" rounded={false} style={paperStyle} zDepth={5}>
                     <div id="quran-halaqa">
                         <div className="width40 ">
-                            <img src="img/praying-space.jpg" className="block-img full-width" />
+                            <img src="img/quran_halaqa.jpg" className="block-img full-width" />
                         </div>
                         <div className="width60 alignTop section">
                             <h2 className="">Quran Halaqa</h2>
