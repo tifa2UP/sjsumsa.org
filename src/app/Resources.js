@@ -116,8 +116,7 @@ export default class Resources extends React.Component {
                 </Paper>
                 <div id="handbook">
                     <h2 className="no-margin">New Students Handbook</h2>
-                    <p id="handbook-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis cursus libero pulvinar gravida.
-                        Sed purus risus,tempus a condimentum quis,</p>
+                    <p id="handbook-description">Find off-campus Mosques, Roommates, Halal Restaurants and our unofficial hangout spot!</p>
                     <RaisedButton secondary={true} target="_blank" href="handbook.pdf" label="Download PDF" style={buttonStyle}/>
                 </div>
             </div>
