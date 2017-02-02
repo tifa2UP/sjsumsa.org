@@ -10,18 +10,39 @@ import FlatButton from 'material-ui/FlatButton';
 
 export default class Events extends React.Component{
 
-    eventsList(props){
-        var numbers = props.numbers;
-        const eventItems = numbers.map((number) =>
-            <li>{number}</li>
-        );
-        return(
-            <div>{eventItems}</div>
-        )
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            events: [{
+                id: 1,
+                title: 'event 1',
+                type: 'Social',
+                picture: '',
+                dayAndTime: 'Tuesday at 2:30pm',
+                locationAndDate: 'BBQ pit - 1/9/2017',
+                description: 'lorem ipsum loves me'
+            },
+                {
+                    id: 2,
+                    type: 'Social',
+                    picture: '',
+                    day: '',
+                    time: '',
+                    location: '',
+                },
+                {
+                    id: 3,
+                    type: 'Social',
+                    picture: '',
+                    day: '',
+                    time: '',
+                    location: '',
+                },
+            ]
+        }
+    }
 
     render() {
-        const numbers = [1, 2, 3, 4];
 
         const archiveStyle = {
             marginTop: 20,
@@ -30,6 +51,7 @@ export default class Events extends React.Component{
 
         const titleStyle = {
             fontSize: '160%',
+            textTransform: 'uppercase'
         };
 
         const titleStyle2 = {
@@ -54,81 +76,34 @@ export default class Events extends React.Component{
 
         const cardTextExpanded = false;
 
+        var events = this.state.events.map(event =>
+            <div className="cardTest alignTop" key={event.id}>
+                <Card style={cardStyle}>
+                    <CardHeader
+                        title={event.title} titleStyle={titleStyle}
+                        subtitle={event.type} subtitleStyle={subtitleStyle}
+                        actAsExpander={true}
+                        showExpandableButton={true}
+                    />
+                    <img src="img/event-placeholder.jpeg" style={imgStyle}/>
+                    <CardText style={cardTextStyle} expandable={true}>
+                        {event.description}
+                    </CardText>
+                    <CardTitle title={event.dayAndTime} subtitle={event.locationAndDate} titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
+                    <CardActions>
+                        <FlatButton label="Description" primary={true}/>
+                        <FlatButton label="RSVP" secondary={true}/>
+                    </CardActions>
+                </Card>
+            </div>
+        );
+
+
         return (
-
             <Paper className="section" rounded={false} zDepth={1} id="events">
-                <eventsList numbers={numbers} />
                 <h1 className="headingStyle1">EVENTS</h1>
-                {/*Original Card*/}
                 <div>
-                    <div className="cardTest alignTop">
-                        <Card style={cardStyle}>
-                            <CardHeader
-                                title="EVENT 1" titleStyle={titleStyle}
-                                subtitle="Social" subtitleStyle={subtitleStyle}
-                                actAsExpander={true}
-                                showExpandableButton={true}
-                            />
-                            <img src="img/event-placeholder.jpeg" style={imgStyle}/>
-                            <CardText style={cardTextStyle} expandable={true}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                            </CardText>
-                            <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
-                            <CardActions>
-                                <FlatButton label="Description" primary={true}/>
-                                <FlatButton label="RSVP" secondary={true}/>
-                            </CardActions>
-                        </Card>
-                    </div>
-                    {/*Duplicate cards start here*/}
-                    <div className="cardTest alignTop">
-                        <Card style={cardStyle}>
-                            <CardHeader
-                                title="EVENT 2" titleStyle={titleStyle}
-                                subtitle="Social" subtitleStyle={subtitleStyle}
-                                actAsExpander={true}
-                                showExpandableButton={true}
-                            />
-                            <img src="img/event-placeholder.jpeg" style={imgStyle}/>
-                            <CardText style={cardTextStyle} expandable={true}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                            </CardText>
-                            <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
-                            <CardActions>
-                                <FlatButton label="Description" primary={true}/>
-                                <FlatButton label="RSVP" secondary={true}/>
-                            </CardActions>
-                        </Card>
-                    </div>
-                    <div className="cardTest alignTop">
-                        <Card style={cardStyle}>
-                            <CardHeader
-                                title="EVENT 3" titleStyle={titleStyle}
-                                subtitle="Social" subtitleStyle={subtitleStyle}
-                                actAsExpander={true}
-                                showExpandableButton={true}
-                            />
-                            <img src="img/event-placeholder.jpeg" style={imgStyle}/>
-                            <CardText style={cardTextStyle} expandable={true}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
-                                Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
-                                Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
-                            </CardText>
-                            <CardTitle title="Wednesday at 2:30 pm" subtitle="DMH 123 - 1/9/2017" titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
-                            <CardActions>
-                                <FlatButton label="Description" primary={true}/>
-                                <FlatButton label="RSVP" secondary={true}/>
-                            </CardActions>
-                        </Card>
-                    </div>
-
+                    {events}
                 </div>
                 <FlatButton label="Events Archive" style={archiveStyle}/>
             </Paper>

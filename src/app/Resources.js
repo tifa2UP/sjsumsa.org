@@ -22,36 +22,7 @@ const paperStyle = {
 
 
 export default class Resources extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            events: [{
-                id: 1,
-                type: 'Social',
-                picture: '',
-                day: '',
-                time: '',
-                location: '',
-            },
-            {
-                    id: 2,
-                    type: 'Social',
-                    picture: '',
-                    day: '',
-                    time: '',
-                    location: '',
-            },
-            {
-                    id: 3,
-                    type: 'Social',
-                    picture: '',
-                    day: '',
-                    time: '',
-                    location: '',
-                },
-            ]
-        }
-    }
+
     componentWillMount(){
         const prayingSpaceRef = firebase.database().ref('Praying Space');
         prayingSpaceRef.on('value', snap => {
