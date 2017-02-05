@@ -7,9 +7,28 @@ var firebase = require('firebase');
 import Paper from 'material-ui/Paper'
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-
+var key = 0;
 
 export default class Events extends React.Component{
+    getKey(){
+        key++;
+        return key;
+    }
+
+    handleExpandChange = (expanded) => {
+        this.setState({expanded: expanded});
+    };
+
+    handleExpand = () => {
+        this.setState({expanded: true});
+    };
+
+    reverseExpand(expanded){
+        return !expanded;
+    }
+    handleReduce = () => {
+        this.setState({expanded: false});
+    };
 
     componentWillMount(){
         var database = firebase.database();
@@ -33,32 +52,8 @@ export default class Events extends React.Component{
         super(props);
 
         this.state = {
-            events: [{
-                id: 1,
-                title: 'event 1',
-                type: 'Social',
-                pictureURL: '',
-                dayAndTime: 'Tuesday at 2:30pm',
-                locationAndDate: 'BBQ pit - 1/9/2017',
-                description: 'lorem ipsum loves me'
-            },
-                {
-                    id: 2,
-                    type: 'Social',
-                    picture: '',
-                    day: '',
-                    time: '',
-                    location: '',
-                },
-                {
-                    id: 3,
-                    type: 'Social',
-                    pictureURL: '',
-                    day: '',
-                    time: '',
-                    location: '',
-                },
-            ]
+            events: [],
+            expanded: false,
         }
     }
 
@@ -83,7 +78,8 @@ export default class Events extends React.Component{
         };
 
         const imgStyle = {
-            width: '100%'
+            width: '100%',
+            height: '180%'
         };
 
         const cardStyle = {
@@ -97,8 +93,8 @@ export default class Events extends React.Component{
         const cardTextExpanded = false;
 
         var events = this.state.events.map(event =>
-            <div className="cardTest alignTop" key={event.id}>
-                <Card style={cardStyle}>
+            <div className="cardTest alignTop" key={this.getKey()}>
+                <Card style={cardStyle} expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
                     <CardHeader
                         title={event.title} titleStyle={titleStyle}
                         subtitle={event.type} subtitleStyle={subtitleStyle}
@@ -111,7 +107,7 @@ export default class Events extends React.Component{
                     </CardText>
                     <CardTitle title={event.dayAndTime} subtitle={event.locationAndDate} titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
                     <CardActions>
-                        <FlatButton label="Description" primary={true}/>
+                        <FlatButton label="Description" primary={true} onTouchTap={this.handleExpand}/>
                         <FlatButton label="RSVP" secondary={true}/>
                     </CardActions>
                 </Card>
