@@ -11,6 +11,16 @@ import FlatButton from 'material-ui/FlatButton';
 
 export default class Events extends React.Component{
 
+    componentWillMount(){
+        var database = firebase.database();
+        var eventsRef = database.ref().root;
+        eventsRef.on('value', snap => {
+            var events = Object.values(snap.val());
+            this.setState({
+                events: events,
+            })
+        })
+    }
     /*
      const aboutRef = firebase.database().ref('About');
      aboutRef.on('value', snap => {
@@ -21,12 +31,7 @@ export default class Events extends React.Component{
      */
     constructor(props) {
         super(props);
-        var database = firebase.database();
-        var eventsRef = database.ref().root;
-        eventsRef.on('value', snap => {
-        console.log(snap.val())
-        })
-        console.log(eventsRef);
+
         this.state = {
             events: [{
                 id: 1,
@@ -100,7 +105,7 @@ export default class Events extends React.Component{
                         actAsExpander={true}
                         showExpandableButton={true}
                     />
-                    <img src={event.imageURL} style={imgStyle}/>
+                    <img src={event.pictureURL} style={imgStyle}/>
                     <CardText style={cardTextStyle} expandable={true}>
                         {event.description}
                     </CardText>
