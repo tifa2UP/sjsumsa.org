@@ -16,11 +16,10 @@ export default class Events extends React.Component{
     }
 
     handleExpandChange = (expanded) => {
-        this.setState({expanded: expanded});
     };
 
     handleExpand = () => {
-        this.setState({expanded: true});
+        this.expandedForm = true;
     };
 
     reverseExpand(expanded){
@@ -35,19 +34,17 @@ export default class Events extends React.Component{
         var eventsRef = database.ref().root;
         eventsRef.on('value', snap => {
             var events = Object.values(snap.val());
+            for (var i = 0; i < events.length; i++){
+                events[i].expandedForm = false;
+            }
+            console.log(events)
+
             this.setState({
                 events: events,
             })
         })
     }
-    /*
-     const aboutRef = firebase.database().ref('About');
-     aboutRef.on('value', snap => {
-     this.setState({
-     about: snap.val()
-     });
-     })
-     */
+
     constructor(props) {
         super(props);
 
@@ -94,7 +91,7 @@ export default class Events extends React.Component{
 
         var events = this.state.events.map(event =>
             <div className="cardTest alignTop" key={this.getKey()}>
-                <Card style={cardStyle} expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+                <Card style={cardStyle} expanded={event.expanded} onExpandChange={this.handleExpandChange}>
                     <CardHeader
                         title={event.title} titleStyle={titleStyle}
                         subtitle={event.type} subtitleStyle={subtitleStyle}
@@ -108,7 +105,7 @@ export default class Events extends React.Component{
                     <CardTitle title={event.dayAndTime} subtitle={event.locationAndDate} titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
                     <CardActions>
                         <FlatButton label="Description" primary={true} onTouchTap={this.handleExpand}/>
-                        <FlatButton label="RSVP" secondary={true}/>
+                        <FlatButton label="RSVP" secondary={true} href={event.RSVP} target="_window"/>
                     </CardActions>
                 </Card>
             </div>
