@@ -87,6 +87,10 @@ export default class Events extends React.Component{
             // color: '#000',
         };
 
+        var archivedEvents = (
+        <FlatButton label="Events Archive" style={archiveStyle}/>
+        );
+
         const cardTextExpanded = false;
 
         var events = this.state.events.map(event =>
@@ -118,7 +122,7 @@ export default class Events extends React.Component{
                 <div>
                     {events}
                 </div>
-                <FlatButton label="Events Archive" style={archiveStyle}/>
+                    {archivedEvents}
             </Paper>
         );
     }
