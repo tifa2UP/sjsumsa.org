@@ -2,11 +2,10 @@
  * Created by Abdellatif on 1/9/2017.
  */
 var React = require('react');
-var ReactDOM = require('react-dom');
 var firebase = require('firebase');
 import Paper from 'material-ui/Paper'
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
+import EventCard from './EventCard'
 var key = 0;
 
 export default class Events extends React.Component{
@@ -61,32 +60,6 @@ export default class Events extends React.Component{
         };
 
 
-        const titleStyle = {
-            fontSize: '160%',
-            textTransform: 'uppercase'
-        };
-
-        const titleStyle2 = {
-            fontSize: '120%',
-        };
-
-        const subtitleStyle = {
-            color: '#ababab'
-        };
-
-        const imgStyle = {
-            width: '100%',
-            height: '180%'
-        };
-
-        const cardStyle = {
-            textAlign: 'left',
-        };
-
-        const cardTextStyle = {
-            // color: '#000',
-        };
-
         var archivedEvents = (
         <FlatButton label="Events Archive" style={archiveStyle}/>
         );
@@ -94,26 +67,31 @@ export default class Events extends React.Component{
         const cardTextExpanded = false;
 
         var events = this.state.events.map(event =>
-            <div className="cardTest alignTop" key={this.getKey()}>
-                <Card style={cardStyle} expanded={event.expanded} onExpandChange={this.handleExpandChange}>
-                    <CardHeader
-                        title={event.title} titleStyle={titleStyle}
-                        subtitle={event.type} subtitleStyle={subtitleStyle}
-                        actAsExpander={true}
-                        showExpandableButton={true}
-                    />
-                    <img src={event.pictureURL} style={imgStyle}/>
-                    <CardText style={cardTextStyle} expandable={true}>
-                        {event.description}
-                    </CardText>
-                    <CardTitle title={event.dayAndTime} subtitle={event.locationAndDate} titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
-                    <CardActions>
-                        <FlatButton label="Description" primary={true} onTouchTap={this.handleExpand}/>
-                        <FlatButton label="RSVP" secondary={true} href={event.RSVP} target="_window"/>
-                    </CardActions>
-                </Card>
-            </div>
-        );
+        <EventCard></EventCard>
+
+
+        )
+        // var events = this.state.events.map(event =>
+        //     <div className="cardTest alignTop" key={this.getKey()}>
+        //         <Card style={cardStyle} expanded={event.expanded} onExpandChange={this.handleExpandChange}>
+        //             <CardHeader
+        //                 title={event.title} titleStyle={titleStyle}
+        //                 subtitle={event.type} subtitleStyle={subtitleStyle}
+        //                 actAsExpander={true}
+        //                 showExpandableButton={true}
+        //             />
+        //             <img src={event.pictureURL} style={imgStyle}/>
+        //             <CardText style={cardTextStyle} expandable={true}>
+        //                 {event.description}
+        //             </CardText>
+        //             <CardTitle title={event.dayAndTime} subtitle={event.locationAndDate} titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
+        //             <CardActions>
+        //                 <FlatButton label="Description" primary={true} onTouchTap={this.handleExpand}/>
+        //                 <FlatButton label="RSVP" secondary={true} href={event.RSVP} target="_window"/>
+        //             </CardActions>
+        //         </Card>
+        //     </div>
+        // );
 
 
         return (
