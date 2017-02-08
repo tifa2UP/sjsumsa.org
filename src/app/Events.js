@@ -67,9 +67,8 @@ export default class Events extends React.Component{
         const cardTextExpanded = false;
 
         var events = this.state.events.map(event =>
-        <EventCard></EventCard>
-
-
+        <EventCard key={this.getKey()} title={event.title} type={event.type} pictureURL={event.pictureURL} description={event.description}
+        dayAndTime={event.dayAndTime} locationAndDate={event.locationAndDate} RSVP={event.RSVP}></EventCard>
         )
         // var events = this.state.events.map(event =>
         //     <div className="cardTest alignTop" key={this.getKey()}>
@@ -80,7 +79,7 @@ export default class Events extends React.Component{
         //                 actAsExpander={true}
         //                 showExpandableButton={true}
         //             />
-        //             <img src={event.pictureURL} style={imgStyle}/>
+        //             <img src={event.pi ctureURL} style={imgStyle}/>
         //             <CardText style={cardTextStyle} expandable={true}>
         //                 {event.description}
         //             </CardText>
