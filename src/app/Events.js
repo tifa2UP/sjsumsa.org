@@ -26,10 +26,6 @@ export default class Events extends React.Component{
         var eventsRef = database.ref().root.orderByChild("archived").equalTo(true);
         eventsRef.on('value', snap => {
             var events = Object.values(snap.val());
-            for (var i = 0; i < events.length; i++){
-                events[i].expandedForm = false;
-            }
-
             this.setState({
                 events: events,
             })
