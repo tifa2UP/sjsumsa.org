@@ -71,7 +71,6 @@ export default class Events extends React.Component{
             <EventCard key={Events.getKey()} title={event.title} type={event.type} pictureURL={event.pictureURL} description={event.description}
                        dayAndTime={event.dayAndTime} locationAndDate={event.locationAndDate} RSVP={event.RSVP}></EventCard>
         );
-        console.log(this.state.displayArchive)
 
         if (this.state.displayArchive){
             archivedEvents =  this.state.archivedEvents.map(event =>
