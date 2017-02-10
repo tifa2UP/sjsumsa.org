@@ -40,10 +40,19 @@ export default class EventCard extends React.Component {
         }
     }
 
+    handleExpandChange = (expanded) => {
+        this.setState({expanded: expanded});
+    };
+
+
+    handleExpand = () => {
+        this.setState({expanded: !this.state.expanded});
+    };
+
     render(){
         return (
         <div className="cardTest alignTop" key={this.props.key}>
-            <Card style={cardStyle} expanded={this.state.expanded} >
+            <Card style={cardStyle} expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
                 <CardHeader
                     title={this.props.title} titleStyle={titleStyle}
                     subtitle={this.props.type} subtitleStyle={subtitleStyle}
