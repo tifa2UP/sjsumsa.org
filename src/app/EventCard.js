@@ -66,7 +66,7 @@ export default class EventCard extends React.Component {
                 <CardTitle title={this.props.dayAndTime} subtitle={this.props.locationAndDate} titleStyle={titleStyle2} subtitleStyle={subtitleStyle} />
                 <CardActions>
                     <FlatButton label="Description" primary={true} onTouchTap={this.handleExpand}/>
-                    <FlatButton label="RSVP" secondary={true} href={event.RSVP} target="_window"/>
+                    <FlatButton label="RSVP" secondary={true} href={this.props.RSVP} target="_window"/>
                 </CardActions>
             </Card>
         </div>
