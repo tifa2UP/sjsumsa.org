@@ -111,7 +111,7 @@ export default class Resources extends React.Component {
                                 location: TBD for Spring <br/>
                                 Time: TBD for Spring
                             </p>
-                            <FlatButton label="Sign up"/>
+                            <FlatButton label="Sign up" href="https://goo.gl/forms/IaJ2wnABFBDH42ax1" target="_window"/>
                         </div>
                     </div>
                 </Paper>
