@@ -9,7 +9,7 @@ import EventCard from './EventCard'
 var key = 0;
 
 export default class Events extends React.Component{
-    getKey(){
+    static getKey(){
         key++;
         return key;
     }
@@ -21,16 +21,9 @@ export default class Events extends React.Component{
         this.expandedForm = true;
     };
 
-    reverseExpand(expanded){
-        return !expanded;
-    }
-    handleReduce = () => {
-        this.setState({expanded: false});
-    };
-
     componentWillMount(){
         var database = firebase.database();
-        var eventsRef = database.ref().root;
+        var eventsRef = database.ref().root.orderByChild("archived").equalTo(true);
         eventsRef.on('value', snap => {
             var events = Object.values(snap.val());
             for (var i = 0; i < events.length; i++){
@@ -48,6 +41,7 @@ export default class Events extends React.Component{
 
         this.state = {
             events: [],
+            archivedEvent: [],
             expanded: false,
         }
     }
@@ -66,8 +60,8 @@ export default class Events extends React.Component{
         const cardTextExpanded = false;
 
         var events = this.state.events.map(event =>
-        <EventCard key={this.getKey()} title={event.title} type={event.type} pictureURL={event.pictureURL} description={event.description}
-        dayAndTime={event.dayAndTime} locationAndDate={event.locationAndDate} RSVP={event.RSVP}></EventCard>
+        <EventCard key={Events.getKey()} title={event.title} type={event.type} pictureURL={event.pictureURL} description={event.description}
+                   dayAndTime={event.dayAndTime} locationAndDate={event.locationAndDate} RSVP={event.RSVP}></EventCard>
         );
 
         return (
