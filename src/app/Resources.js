@@ -29,7 +29,7 @@ export default class Resources extends React.Component {
             this.setState({
                 prayingSpace: snap.val()
             });
-        })
+        });
         const halaqaRef = firebase.database().ref('Halaqa');
         halaqaRef.on('value', snap => {
             this.setState({
@@ -71,14 +71,15 @@ export default class Resources extends React.Component {
                             <p className="section-text resource-description">The on-campus praying space is located in the Mosaic
                                 Cross Cultural Center. Located on the east side of the Student Union. The space is also equipped with a
                                 wudoo’ (ablution) area.</p>
-                            <p className="section-text resource-description">
+
+                            <div className="section-text resource-description">
                                 The praying space is open on: <br/>
                                 <ul>
                                     <li>M-Th: 9 am to 8 pm</li>
 
-                                    <li> Fr: 9 am - 5 pm </li>
+                                    <li>Fr: 9 am - 5 pm </li>
                                 </ul>
-                            </p>
+                            </div>
                             <FlatButton label="Location by video" onTouchTap={this.handleOpen}/>
                             <Dialog
                                 title="Prayer Space Location"
