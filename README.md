@@ -43,6 +43,11 @@
   5. Type `npm start` to run a local server
   6. You access the website on `http://localhost:3000/`
   
+  ###Build & Deployment Instructions
+  1. Type `npm run build` to create a build folder from your source code.
+  2. Set-up / Gain access to a firebase project. Learn more about the process here: <a href="https://firebase.google.com/docs/web/setup"> https://firebase.google.com/docs/web/setup</a>
+  3. Type `firebase deploy` to deploy the website. (Typically takes ~1 minute for the changes to be live) 
+  
   ###Architecture
   
   The website built as a single page application:
