@@ -1,6 +1,6 @@
 # SJSU MSA's website
   
- #### Assalamulaikum, this repo contains the source code for sjsumsa.org
+ ####Assalamulaikum, this repo contains the source code for sjsumsa.org
  
  ###Stack
  
