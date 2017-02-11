@@ -25,7 +25,7 @@
   
   ~~The API keys for firebase are masked. If you'd like to access firebase for debugging or deployment purposes shoot us an email at dev@sjsumsa.org~~
   
-  The API keys are no longer masked, firebase is now programmed to check the URL of the website the request is sent it from and it needs to match `sjsumsa.org` 
+  The API keys are no longer masked, firebase is now programmed to check the URL of the website the request it is sent it from, it needs to match `sjsumsa.org`. There's no longer a security vulnerability 
   
   ###React Tutorial
   

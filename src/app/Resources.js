@@ -105,7 +105,7 @@ export default class Resources extends React.Component {
                         <div className="width60 alignTop section">
                             <h2 className="">Quran Halaqa</h2>
                             <p className="section-text resource-description">
-                                We have a weekly Qur'an halaqa (session) in which we review or memorize a part of Qur'an. <br/>
+                                We have a weekly Qur'an halaqa (session) in which we review or memorize a part of the Qur'an. <br/>
                             </p>
                             <p>
                                 location: TBD for Spring <br/>
