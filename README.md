@@ -10,7 +10,7 @@
  * Webpack
  * Babel
  
- Other items and version numbers could be found in 'package.json'
+ Other items and their corresponding version numbers could be found in 'package.json'
 
  
  ###Design: 
@@ -19,26 +19,35 @@
  
  ###Reporting an issue
  
- If you find a bug or would like to add a suggestion/feature, you can do through using Github Issues.
+ If you find a bug or would like to add a suggestion/feature, you can do it using Github Issues.
   
   ###Firebase access
   
-  The API keys for firebase are masked. If you'd like to access firebase for debugging or deployment purposes shoot us an email at dev@sjsumsa.org
+  ~~The API keys for firebase are masked. If you'd like to access firebase for debugging or deployment purposes shoot us an email at dev@sjsumsa.org~~
+  
+  The API keys are no longer masked, firebase is now programmed to check the URL of the website the request is sent it from and it needs to match `sjsumsa.org` 
+  
+  ###React Tutorial
+  
+  This is a very nice guide to get you started with React: <a href="https://github.com/petehunt/react-howto"> https://github.com/petehunt/react-howto </a>
+  
+  Let me know if you have any questions!
+  
   
   ###Installation instructions
   
   1. Clone or Fork the repo
   2. Make sure that you have a recent version of npm installed. If not, you can download it from http://npm.org
   3. Open the terminal and cd to your project directory
-  4. Type npm install to install all the dependencies
-  5. Type npm start to run a local server
-  6. You access the website on http://localhost:3000/
+  4. Type `npm install` to install all the dependencies
+  5. Type `npm start` to run a local server
+  6. You access the website on `http://localhost:3000/`
   
   ###Architecture
   
-  The website is a single page application:
+  The website built as a single page application:
   
-  www/index.html contains the HTML file in which the app is appended to. Include in this file all the meta tags, open graph attributes and cdns
+  `www/index.html` contains the HTML file in which the app is appended to. Include in this file all the meta tags, open graph attributes and cdns
   
   The react application is appended to the app id in the index file.
    
@@ -48,7 +57,7 @@
   
   ###License
   
-  We made our license MIT. You can use the source code in anyway you want. ;) 
+  We made our license MIT. Feel free to use the source code in anyway you want. ;) 
   
   ###Question
   If you have any questions, we'd be happy to answer it at dev@sjsumsa.org
