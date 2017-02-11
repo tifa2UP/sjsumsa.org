@@ -1,8 +1,8 @@
-# SJSU MSA's website
+#SJSU MSA's website
   
- ####Assalamulaikum, this repo contains the source code for sjsumsa.org
+ <h4>Assalamulaikum, this repo contains the source code for sjsumsa.org</h4>
  
- ###Stack
+ <h3>Stack</h3>
  
  * React.js
  * Material-UI
