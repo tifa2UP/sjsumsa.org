@@ -16,7 +16,7 @@ import Contact from './Contact'
 import Footer from './Footer'
 import * as firebase from 'firebase';
 
-
+console.log("Salam Awesome Developer! We've built this website using React.js, Material-UI, and Firebase. If you'd like to contribute to the project, it'd be great! Get in touch with us. You can see the source code at: https://github.com/tifa2UP/sjsumsa.org")
 var config = {
     apiKey: "AIzaSyCL4-zkL3zYHt9NhYDx9m2Q3Ig9US8dTHA",
     authDomain: "sjsu-msa.firebaseapp.com",
@@ -28,15 +28,7 @@ var config = {
 firebase.initializeApp(config);
 const db = firebase.database();
 
-const muiTheme = getMuiTheme({
-    palette: {
-        // textColor: white,
-    },
-    textField: {
-        // focusColor: 'white',
-        // floatingLabelColor: '#e6e6e6e',
-    },
-});
+const muiTheme = getMuiTheme({});
 
 class Main extends Component {
 
