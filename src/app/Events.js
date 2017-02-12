@@ -26,13 +26,20 @@ export default class Events extends React.Component{
         var archivedEventsRef = database.ref().root.orderByChild("archived").equalTo(true);
         var eventsRef = database.ref().root.orderByChild("archived").equalTo(false);
         archivedEventsRef.on('value', snap => {
-            var archivedEvents = Object.values(snap.val());
+            // var archivedEvents = Object.values(snap.val());
+            var archivedEvents = [];
+            for (var key in snap.val()){
+                archivedEvents.push(snap.val()[key]);
+            }
             this.setState({
                 archivedEvents: archivedEvents,
             })
         })
         eventsRef.on('value', snap => {
-            var events = Object.values(snap.val());
+            var events = [];
+            for (var key in snap.val()){
+                events.push(snap.val()[key]);
+            }
             this.setState({
                 events: events,
             })
