@@ -64,5 +64,5 @@ You'll find each of the components in the app directory
   
 We made our license MIT. Feel free to use the source code in anyway you want. ;) 
   
-###Question
+###Questions
 If you have any questions, we'd be happy to answer it at dev@sjsumsa.org
