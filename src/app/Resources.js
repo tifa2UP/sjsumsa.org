@@ -75,7 +75,7 @@ export default class Resources extends React.Component {
                             <div className="section-text resource-description">
                                 The praying space is open on: <br/>
                                 <ul>
-                                    <li>M-Th: 9 am to 8 pm</li>
+                                    <li>M-Th: 9 am to 6 pm</li>
 
                                     <li>Fr: 9 am - 5 pm </li>
                                 </ul>
@@ -108,8 +108,8 @@ export default class Resources extends React.Component {
                                 We have a weekly Qur'an halaqa (session) in which we review or memorize a part of the Qur'an. <br/>
                             </p>
                             <p>
-                                location: TBD for Spring <br/>
-                                Time: TBD for Spring
+                                Location: Mosaic's conference room <br/>
+                                Time: Mondays from 4 - 4:30 pm
                             </p>
                             <FlatButton label="Sign up" href="https://goo.gl/forms/IaJ2wnABFBDH42ax1" target="_window"/>
                         </div>
