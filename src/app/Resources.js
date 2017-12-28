@@ -86,9 +86,10 @@ export default class Resources extends React.Component {
                                 actions={actions}
                                 modal={false}
                                 open={this.state.open}
+                                contentStyle={{width: "100%"}}
                                 onRequestClose={this.handleClose}
                             >
-                                <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ydn7Nvh1oUQ" frameBorder="0" allowFullScreen></iframe>
+                                <iframe width="100%" height="315" style={{height: 315}} src="https://www.youtube.com/embed/Ydn7Nvh1oUQ" frameBorder="0" allowFullScreen></iframe>
                             </Dialog>
                         </div>
 
