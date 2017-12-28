@@ -90,7 +90,7 @@ export default class Contact extends React.Component {
                             {/*/><br />*/}
                             {/*<FlatButton label="Submit" value="Submit" type="submit" style={buttonStyle} />*/}
                         {/*</form>*/}
-                    E-mail: hi@sjsumsa.org
+                    E-mail: inbox@sjsumsa.org
                     </div>
 
                     <div id="social" className="alignTop alignLeft">
@@ -105,4 +105,3 @@ export default class Contact extends React.Component {
         );
     }
 }
-
