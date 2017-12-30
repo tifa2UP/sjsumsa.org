@@ -105,8 +105,8 @@ a {
 #social{
     display: inline;
 }
-.fa{
-    font-size: 200%;
+.fab{
+    font-size: 32px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -181,8 +181,11 @@ a {
 .fa-instagram:hover {
     color: #cd486b;
 }
-.fa-facebook:hover {
+.fa-facebook-f:hover {
     color: #3b5998;
+}
+.fa-facebook-messenger:hover {
+    color: #01C5FF;
 }
 .fa-heart{
     font-size: 70%;

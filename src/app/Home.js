@@ -19,8 +19,13 @@ let heading1Style = {
   marginBottom: 100,
 }
 let socialIconStyle = {
-  marginLeft: 20,
-  marginRight: 20,
+  marginLeft: 40,
+  marginRight: 40,
+  fontSize: 42,
+}
+let chevronDownStyle = {
+  position: "absolute",
+  bottom: "5vh",
 }
 var Home = React.createClass({
     render(){
@@ -29,10 +34,12 @@ var Home = React.createClass({
               <h2 style={heading2Style}>San Jose State University</h2>
               <h1 style={heading1Style}>Muslim Student Association</h1>
               <div id="social" className="alignTop alignLeft">
-                  <a style={socialIconStyle} href="https://www.facebook.com/groups/5696549276/" target="_blank"><i className="fa fa-facebook hvr-grow"></i></a>
-                  <a style={socialIconStyle} href="https://www.facebook.com/groups/5696549276/" target="_blank"><i className="fa fa-facebook hvr-grow"></i></a>
-                  <a style={socialIconStyle} href="https://www.instagram.com/msa_sjsu/" target="_blank"><i className="fa fa-instagram hvr-grow"></i></a>
+                  <a style={socialIconStyle} href="https://www.facebook.com/groups/5696549276/" target="_blank"><i className="fab fa-facebook-messenger hvr-grow"></i></a>
+                  <a style={socialIconStyle} href="https://www.facebook.com/groups/5696549276/" target="_blank"><i className="fab fa-facebook-f hvr-grow"></i></a>
+                  <a style={socialIconStyle} href="https://www.instagram.com/msa_sjsu/" target="_blank"><i className="fab fa-instagram hvr-grow"></i></a>
               </div>
+              <br />
+              <a style={chevronDownStyle} href="https://www.instagram.com/msa_sjsu/" target="_blank"><i className="fas fa-chevron-down hvr-grow"></i></a>
             </div>
         );
     }
