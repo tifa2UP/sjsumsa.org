@@ -101,8 +101,8 @@ export default class Contact extends React.Component {
 
                     <div id="social" className="alignTop alignLeft">
                         <h4 className=""></h4>
-                        <a style={iconStyle} href="https://www.facebook.com/groups/5696549276/" target="_blank"><i className="fab fa-facebook-f hvr-grow"></i></a>
-                        <a style={iconStyle} href="https://www.instagram.com/msa_sjsu/" target="_blank"><i className="fab fa-instagram hvr-grow"></i> </a>
+                        <a style={iconStyle} href="https://www.facebook.com/sjsumsa/" target="_blank"><i className="fab fa-facebook-f hvr-grow"></i></a>
+                        <a style={iconStyle} href="https://www.instagram.com/sjsumsa/" target="_blank"><i className="fab fa-instagram hvr-grow"></i> </a>
                     </div>
 
                 </div>
