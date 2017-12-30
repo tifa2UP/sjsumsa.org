@@ -39,7 +39,7 @@ var Home = React.createClass({
                   <a style={socialIconStyle} href="https://m.me/join/AbZvqymuKjqEDwRx" target="_blank"><i className="fab fa-facebook-messenger hvr-grow"></i></a>
               </div>
               <br />
-              <a style={chevronDownStyle} href="#about"><i className="fas fa-chevron-down hvr-grow"></i></a>
+              <a style={chevronDownStyle} id="chevron-down"><i className="fas fa-chevron-down hvr-grow"></i></a>
             </div>
         );
     }

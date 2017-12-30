@@ -65,4 +65,14 @@
 </script>
 <script src="app.js"></script>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function (){
+          $("#chevron-down").click(function (){
+              $('html, body').animate({
+                  scrollTop: $("#about").offset().top
+              }, 500);
+          });
+      });
+  </script>
 </html>

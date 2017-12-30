@@ -197,6 +197,22 @@ a {
 .fa-heart:hover{
     color: #ff4081;
 }
+
+#chevron-down:hover{
+  cursor: pointer;
+}
+
+#chevron-down{
+animation-name: chevron-animation;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+will-change: auto;
+}
+
+@keyframes chevron-animation {
+    0%   {bottom: 5vh}
+    50%  {bottom: 4vh}
+}
 #about{
    padding-left: 10%;
    padding-right: 10%;
