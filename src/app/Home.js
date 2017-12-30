@@ -19,9 +19,9 @@ let heading1Style = {
   marginBottom: 100,
 }
 let socialIconStyle = {
-  marginLeft: 40,
-  marginRight: 40,
-  fontSize: 42,
+  marginLeft:  window.innerWidth <= 365 ? 30 : 40,
+  marginRight: window.innerWidth <= 365 ? 30 : 40,
+  fontSize: window.innerWidth <= 365 ? 36 : 42,
 }
 let chevronDownStyle = {
   position: "absolute",
