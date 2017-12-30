@@ -7,12 +7,13 @@ height:"100vh",
 width: "100%",
 backgroundImage: "linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)",
 textAlign: "Center",
-paddingTop: "30vh",
+paddingTop: window.innerWidth <= 600 ? "20vh" : "30vh",
 fontSize: "130%"
 }
 
 let heading2Style = {
   marginTop: 0,
+  fontWeight: 300,
 }
 
 let heading1Style = {
@@ -31,8 +32,10 @@ var Home = React.createClass({
     render(){
         return (
             <div style={divStyle}>
-              <h2 style={heading2Style}>San Jose State University</h2>
-              <h1 style={heading1Style}>Muslim Student Association</h1>
+              <div style={{marginLeft: "5%", marginRight: "5%"}}>
+                <h2 style={heading2Style}>San Jose State University</h2>
+                <h1 style={heading1Style}>Muslim Student Association</h1>
+              </div>
               <div id="social" className="alignTop alignLeft">
                   <a style={socialIconStyle} href="https://www.instagram.com/sjsumsa/" target="_blank"><i className="fab fa-instagram hvr-grow"></i></a>
                   <a style={socialIconStyle} href="https://www.facebook.com/sjsumsa/" target="_blank"><i className="fab fa-facebook-f hvr-grow"></i></a>
